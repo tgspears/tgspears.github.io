@@ -20,9 +20,7 @@ var adjuster = function() {
       $('#linkedin').css({ left : screenHeight/5.6 });
       $('.demoDiv').css({ width : screenHeight/1.5, height : screenHeight/4, fontSize : screenHeight/16 });
       $('.demoImg').css({ height : screenHeight/5 });
-      $('#tblDesc').css({ fontSize : screenHeight/24 });
-      $('#daysieDesc').css({ fontSize : screenHeight/24 });
-      $('#rexDesc').css({ fontSize : screenHeight/24 });
+      $('.desc').css({ fontSize : screenHeight/24 });
     }
     else {
       $('.box').height(screenWidth);
@@ -41,9 +39,7 @@ var adjuster = function() {
       $('#linkedin').css({ left : screenWidth/5.6 });
       $('.demoDiv').css({ width : screenWidth/1.5, height : screenWidth/4, fontSize : screenWidth/16 });
       $('.demoImg').css({ height : screenWidth/5 });
-      $('#tblDesc').css({ fontSize : screenWidth/24 });
-      $('#daysieDesc').css({ fontSize : screenWidth/24 });
-      $('#rexDesc').css({ fontSize : screenWidth/24 });
+      $('.desc').css({ fontSize : screenWidth/24 });
     }
   }
 
