@@ -20,6 +20,10 @@ body {
 .stage {
   -webkit-perspective: 2000px;
   -webkit-perspective-origin: 50% -240px;
+  -moz-perspective: 2000px;
+  -moz-perspective-origin: 50% -240px;
+  perspective: 2000px;
+  perspective-origin: 50% -240px;
 }
 
 /* 404 */

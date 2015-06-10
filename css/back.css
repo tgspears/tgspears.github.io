@@ -3,10 +3,22 @@
     from { -webkit-transform : rotateY(0deg); visibility : visible;}
     to { -webkit-transform : rotateY(-90deg); visibility : hidden; }
 }
+@-moz-keyframes flipOut {
+    from { -webkit-transform : rotateY(0deg); visibility : visible;}
+    to { -webkit-transform : rotateY(-90deg); visibility : hidden; }
+}
+keyframes flipOut {
+    from { -webkit-transform : rotateY(0deg); visibility : visible;}
+    to { -webkit-transform : rotateY(-90deg); visibility : hidden; }
+}
 
 .ng-leave {
     -webkit-transform-origin : 50% 50%;
-    -webkit-animation : flipOut 2s both ease-in;
+    -webkit-animation : flipOut 1s both ease-in;
+    -moz-transform-origin : 50% 50%;
+    -moz-animation : flipOut 1s both ease-in;
+    transform-origin : 50% 50%;
+    animation : flipOut 1s both ease-in;
 }
 
 #backSide {
@@ -14,6 +26,16 @@
 }
 
 @-webkit-keyframes powerGlow {
+    0% {background-color: rgba(0,0,0,0);}
+    50% {background-color: rgba(0,255,0,.5);}
+    100% {background-color: rgba(0,0,0,0);}
+}
+@-moz-keyframes powerGlow {
+    0% {background-color: rgba(0,0,0,0);}
+    50% {background-color: rgba(0,255,0,.5);}
+    100% {background-color: rgba(0,0,0,0);}
+}
+@keyframes powerGlow {
     0% {background-color: rgba(0,0,0,0);}
     50% {background-color: rgba(0,255,0,.5);}
     100% {background-color: rgba(0,0,0,0);}
@@ -34,4 +56,6 @@
 	height: 25%;
 	border-radius: 50%;
 	-webkit-animation: powerGlow 2s infinite;
+	-moz-animation: powerGlow 2s infinite;
+	animation: powerGlow 2s infinite;
 }
