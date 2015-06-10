@@ -1,0 +1,79 @@
+#cardSide {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #000;
+    text-align: right;
+}
+
+/* glow effect on links */
+@-webkit-keyframes hoverGlow {
+    0% {color: rgba(200,200,200,.85);}
+    50% {color: rgba(255,255,255,1);}
+    100% {color: rgba(200,200,200,.85);}
+}
+
+#cardSide a {
+    color: rgba(200,200,200,.85);
+    text-decoration: none;
+}
+
+#cardSide a:hover {
+    -webkit-animation: hoverGlow 2s infinite;
+}
+
+/* flip in */
+@-webkit-keyframes flipIn {
+    0% { -webkit-transform : rotateY(90deg); visibility : hidden; }
+    50% { -webkit-transform : rotateY(90deg); visibility : visible;}
+    100% { -webkit-transform : rotateY(0deg); }
+}
+
+.ng-enter {
+    -webkit-transform-origin : 50% 50%;
+    -webkit-animation : flipIn 4s both ease-out;
+}
+
+/* Positioning */
+
+#name {
+    position: relative;
+    right: 5%;
+    font-weight: 300;
+}
+
+#title {
+    position: relative;
+    right: 5%;
+}
+
+#role {
+    position: relative;
+    right: 5%;
+}
+
+#email {
+    position: relative;
+    right: 5%;
+}
+
+.thirdLevel {
+    position: fixed;
+}
+
+/* link decoration */
+
+#works {
+    text-decoration: underline;
+}
+
+#resume {
+    text-decoration: underline;
+}
+
+#github {
+    text-decoration: underline;
+}
+
+#linkedin {
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+/* GENERAL */
+
+html { 
+  background: url('http://wallpoper.com/images/00/25/71/46/wood-textures_00257146.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+    background-color: rgba(0,0,0,0);
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+}
+
+.stage {
+  -webkit-perspective: 2000px;
+  -webkit-perspective-origin: 50% -240px;
+}
+
+/* 404 */
+
+#fourOhFour {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #FFF;
+}
