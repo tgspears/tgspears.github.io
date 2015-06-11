@@ -7,7 +7,7 @@
     from { -webkit-transform : rotateY(0deg); visibility : visible;}
     to { -webkit-transform : rotateY(-90deg); visibility : hidden; }
 }
-keyframes flipOut {
+@keyframes flipOut {
     from { -webkit-transform : rotateY(0deg); visibility : visible;}
     to { -webkit-transform : rotateY(-90deg); visibility : hidden; }
 }
