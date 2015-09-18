@@ -1,0 +1,46 @@
+#resume {
+	visibility: hidden;
+	height: 0;
+}
+
+#tooSmall {
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	z-index: 42;
+}
+
+#tooSmall img {
+	width: 100%;
+	height: auto;
+}
+
+#tooSmall h1 {
+	font-size: 50px;
+}
+
+#tooSmall h2 {
+	font-size: 30px;
+}
+
+#tooSmall h3 {
+	font-size: 25px;
+}
+
+#tooSmall h4 {
+	font-size: 20px;
+}
+
+#tooSmall p {
+	font-size: 15px;
+}
+
+#tooSmall div {
+	font-size: 10px;
+}
+
+#tooSmall * {
+	font-weight: 100;
+	display: inline;
+}

@@ -1,35 +1,39 @@
 /* GENERAL */
 
-html { 
-  background: url('http://wallpoper.com/images/00/25/71/46/wood-textures_00257146.jpg') no-repeat center center fixed;
-  background-size: cover;
+html, body { height: 100%; width: 100%; margin: 0; }
+
+* {
+	font-family: 'Gudea', sans-serif;
 }
 
-body {
-    background-color: rgba(0,0,0,0);
-    font-family: 'BenchNine', sans-serif;
-    font-weight: 300;
-    letter-spacing: -1px;
+h1 {
+	/*font-family: 'Oxygen', sans-serif;*/
 }
 
-.box {
-    height: 100%;
-    width: 100%;
+#nav * {
+  font-family: 'BenchNine', sans-serif;
+  font-weight: 300;
 }
 
-.stage {
-  -webkit-perspective: 2000px;
-  -webkit-perspective-origin: 50% -240px;
-  -moz-perspective: 2000px;
-  -moz-perspective-origin: 50% -240px;
-  perspective: 2000px;
-  perspective-origin: 50% -240px;
+
+.partyHard {
+	width: auto;
+	height: 100%;
 }
 
-/* 404 */
+.hai {
+  position: relative;
+  left: 21px;
+  bottom: 581px;
+  font-size: 50px;
+  font-weight: 300;
+}
 
-#fourOhFour {
-    border: 2px solid black;
-    border-radius: 5px;
-    background: #FFF;
+.splashImg {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	z-index: 0;
 }
