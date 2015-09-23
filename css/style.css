@@ -1,39 +1,48 @@
+/*
+
+HEADERS / FOCUS TEXT
+
+Bench Nine (LIGHT 300)
+Comfortaa (LIGHT 300)
+
+Abel (NORMAL 400)
+Dosis (EXTRA-LIGHT 200)
+Yanone Kaffeesatz (EXTRA-LIGHT 200)
+Lato (THIN 100 or LIGHT 300)
+Roboto Condensed (LIGHT 300)
+
+
+BODY TEXT
+
+Abel (NORMAL 400)
+Dosis (EXTRA-LIGHT 200)
+Yanone Kaffeesatz (EXTRA-LIGHT 200)
+Lato (LIGHT 300)
+Roboto Condensed (LIGHT 300)
+
+*/
+
+
 /* GENERAL */
 
-html, body { height: 100%; width: 100%; margin: 0; }
+html, body {
+	height: 100%; width: 100%; margin: 0;
+}
 
 * {
-	font-family: 'Gudea', sans-serif;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, #nav * {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-	/*font-family: 'Oxygen', sans-serif;*/
+	font-size: 29px;
 }
 
-#nav * {
-  font-family: 'BenchNine', sans-serif;
-  font-weight: 300;
-}
-
-
-.partyHard {
-	width: auto;
-	height: 100%;
-}
-
-.hai {
-  position: relative;
-  left: 21px;
-  bottom: 581px;
-  font-size: 50px;
-  font-weight: 300;
-}
-
-.splashImg {
-	position: relative;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: auto;
-	z-index: 0;
+h2 {
+	font-size: 24px;
 }

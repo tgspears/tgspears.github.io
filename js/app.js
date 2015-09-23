@@ -7,17 +7,13 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routeProvi
       templateUrl: 'views/mainView.html',
       controller: 'mainController'
     })
-    .when('/about', {
-    	templateUrl: 'views/aboutView.html',
-    	controller: 'mainController'
-    })
     .when('/resume', {
     	templateUrl: 'views/resumeView.html',
     	controller: 'mainController'
     })
     .otherwise({
       templateUrl: 'views/404.html'
-    })
+    });
 
   $locationProvider.hashPrefix('!')
 

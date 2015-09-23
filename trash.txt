@@ -1,26 +1,130 @@
-#nav {
-	height: 30px;
+
+/* RESUME */
+
+#resume {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	top: 55px;
 }
 
-#nav * {
-	font-size: 20px;
-	line-height: 22px;
+#resume_header {
+	height: 5%;
+	width: 20%;
+	margin-left: 40%;
+	text-align: center;
+	white-space: nowrap;
 }
 
-#nav p {
-	margin-top: 5px;
+/* RESUME ABOUT SECTION */
+
+#resume_about {
+	width: 85%;
+	float: right;
+	padding-bottom: 1%;
 }
 
-#nav div {
-	padding-top: 2px;
+#resume_about h1 {
+	text-align: center;
 }
 
-#nav * img {
-  height: 10px;
-  position: relative;
-  top: 3px;
+/* RESUME LIST SECTION */
+
+#resume_lists {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 175px;
+	text-align: center;
 }
 
+#resume_lists > div:nth-child(odd) {
+	padding-bottom: 15%;
+}
+
+/* RESUME CONTACT LIST */
+
+#resume_contact ul {
+	padding-left: 0px;
+}
+
+#resume_contact > p {
+	font-size: 24px;
+}
+
+#resume_contact li {
+	list-style: none;
+	line-height: 10px;
+	font-size: 16px;
+}
+
+#contact_skills_seperator {
+	margin: 0 auto;
+	height: 2px;
+	width: auto;
+	background-color: black;
+}
+
+/* RESUME SKILLS SECTION */
+
+#resume_skills > p {
+	font-size: 24px;
+}
+
+@keyframes wiggle {
+	0% {transform: rotate(2deg);}
+	50% {transform: rotate(-2deg);}
+	100% {transform: rotate(2deg);}
+}
+
+#wiggle {
+	animation: wiggle 3s infinite;
+}
+
+#resume_skills ul {
+	padding-left: 0px;
+}
+
+#resume_skills li {
+	list-style: none;
+	line-height: 10px;
+	font-size: 16px;
+}
+
+#skills_concepts_seperator {
+	margin: 0 auto;
+	margin-top: 10px;
+	height: 2px;
+	width: auto;
+	background-color: black;
+}
+
+/* RESUME CONCEPTS SECTION */
+
+#resume_concepts > p {
+	font-size: 24px;
+}
+
+#resume_concepts ul {
+	padding-left: 0px;
+}
+
+#resume_concepts li {
+	list-style: none;
+	line-height: 10px;
+	font-size: 16px;
+}
+
+#concepts_concepts_seperator {
+	margin-top: 10px;
+	margin-left: 55px;
+	height: 2px;
+	width: 90px;
+	background-color: black;
+	margin-bottom: 10px;
+}
 /* RESUME SECTION */
 
 #resume {
@@ -46,6 +150,31 @@
   float: left;
 }
 
+
+/* RESUME JOB HISTORY SECTION */
+
+#hist_lg {
+	width: 85%;
+	float: right;
+	line-height: 18px;
+}
+
+#hist_lg h1 {
+	text-align: center;
+}
+
+.hist_sm {
+	width: 42.5%;
+	float: right;
+	line-height: 18px;
+}
+
+.hist_sm h1 {
+	text-align: center;
+	line-height: 21px;
+	display: inline;
+}
+
 #hist_lg {
 	width: 85%;
   float: left;
@@ -67,8 +196,6 @@
 .hist_sm h2 {
 	line-height: 20px;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
 /* RESUME LIST SECTION */
 
 #resume_lists div {

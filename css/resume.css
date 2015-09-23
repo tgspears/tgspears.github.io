@@ -1,76 +1,69 @@
-/* RESUME */
-
 #resume {
-	width: 90%;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-	top: 55px;
+	margin: 0 10px;
+}
+
+#resume p, #resume li, #resume ul {
+	font-size: 17px;
 }
 
 #resume_header {
-	height: 5%;
-	width: 20%;
-	margin-left: 40%;
-	text-align: center;
-	white-space: nowrap;
+	padding-top: 20px;
 }
 
-/* RESUME ABOUT SECTION */
-
-#resume_about {
-	width: 85%;
-	float: right;
-	padding-bottom: 1%;
-}
-
-#resume_about h1 {
+#resume_header * {
 	text-align: center;
 }
 
-/* RESUME LIST SECTION */
+.seperator {
+	background: black;
+	height: 1px;
+	width: 80%;
+	margin-left: 10%;
+}
 
 #resume_lists {
-	width: auto;
-	height: 100%;
-	position: absolute;
-	left: 0px;
-	top: 175px;
+	float: left;
+	width: 100%;
+	padding: 5% 0;
+}
+
+#resume_lists * {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#resume_lists > div {
+	width: 27.5%;
+	float: right;
 	text-align: center;
 }
 
-#resume_lists > div:nth-child(odd) {
-	padding-bottom: 15%;
+#resume_lists > div > h3 {
+	margin-bottom: 5px;
 }
 
-/* RESUME CONTACT LIST */
-
-#resume_contact ul {
-	padding-left: 0px;
+#resume_lists .list_sep {
+	background: black;
+	height: 127px;
+	width: 1px;
+	margin: 37px 2%;
 }
 
-#resume_contact > p {
-	font-size: 24px;
+#resume_concepts {
+	margin-right: 6.75%;
 }
 
-#resume_contact li {
-	list-style: none;
-	line-height: 10px;
-	font-size: 16px;
+#resume_contact a {
+	text-decoration: none;
+	color: rgb(115,115,115);
 }
 
-#contact_skills_seperator {
-	margin: 0 auto;
-	height: 2px;
-	width: auto;
-	background-color: black;
+#resume_contact a:hover {
+	color: rgb(0,0,0);
 }
 
-/* RESUME SKILLS SECTION */
-
-#resume_skills > p {
-	font-size: 24px;
-}
+/* Wiggle */
 
 @keyframes wiggle {
 	0% {transform: rotate(2deg);}
@@ -82,69 +75,90 @@
 	animation: wiggle 3s infinite;
 }
 
-#resume_skills ul {
-	padding-left: 0px;
+@media (min-width: 720px) {
+
+	#resume {
+		margin-top: 25px;
+	}
+
+	#resume_main {
+		float: right;
+		width: 72%;
+		margin-right: 3%;
+	}
+
+	#big_small_sep {
+		visibility: hidden;
+	}
+
+	#smalls {
+		width: 94vw;
+		position: relative;
+		right: 27.5%;
+		margin-top: 3%;
+	}
+
+	#smalls .hist_sm {
+		width: 45%;
+		float: left;
+		margin-bottom: 3%;
+	}
+
+	#smalls .hist_sm > h1 {
+		margin-top: 0;	
+	}
+
+	#smalls .seperator {
+		width: 1px;
+		height: 300px;
+		float: left;
+		margin: 0 3%;
+	}
+
+	#resume_main ~ .seperator {
+		visibility: hidden;
+	}
+
+	#resume_lists {
+		width: 25%;
+		margin-top: 25px;
+		padding: 0;
+	}
+
+	#resume_lists > div {
+		width: 100%;
+		float: left;
+	}
+
+	#resume_lists > div > h3 {
+		padding-bottom: 10px;
+	}
+
+	#resume_lists .list_sep {
+		width: 80%;
+		height: 1px;
+		margin-left: 10%;
+	}
+
 }
 
-#resume_skills li {
-	list-style: none;
-	line-height: 10px;
-	font-size: 16px;
-}
+@media (min-width: 1080px) {
 
-#skills_concepts_seperator {
-	margin: 0 auto;
-	margin-top: 10px;
-	height: 2px;
-	width: auto;
-	background-color: black;
-}
+	#resume_main {
+		width: 77%;
+	}
 
-/* RESUME CONCEPTS SECTION */
+	#resume_lists {
+		width: 20%;
+	}
 
-#resume_concepts > p {
-	font-size: 24px;
-}
+	#resume_lists .list_sep {
+		width: 70%;
+		margin-left: 15%;
+	}
 
-#resume_concepts ul {
-	padding-left: 0px;
-}
+	#smalls {
+		right: 20%;
+	}
 
-#resume_concepts li {
-	list-style: none;
-	line-height: 10px;
-	font-size: 16px;
-}
-
-#concepts_concepts_seperator {
-	margin-top: 10px;
-	margin-left: 55px;
-	height: 2px;
-	width: 90px;
-	background-color: black;
-	margin-bottom: 10px;
-}
-
-/* RESUME JOB HISTORY SECTION */
-
-#hist_lg {
-	width: 85%;
-	float: right;
-	line-height: 18px;
-}
-
-#hist_lg h1 {
-	text-align: center;
-}
-
-.hist_sm {
-	width: 42.5%;
-	float: right;
-	line-height: 18px;
-}
-
-.hist_sm h1 {
-	text-align: center;
-	line-height: 21px;
-	display: inline;
 }
