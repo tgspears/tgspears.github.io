@@ -1,0 +1,60 @@
+<br />
+<br />
+<br />
+<h1 id="antMovie">The inspiration for this little project: <a href="https://www.youtube.com/embed/NWBToaXK5T0" target="_blank">Langton's Ant - Numberphile</a></h1>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/NWBToaXK5T0" frameborder="0" allowfullscreen></iframe>
+<br />
+<div id="antGame" ng-controller="mainController">
+	<h1 id="antHeader">THE BOARD</h1>
+	<table id="antTable">
+		<tr ng-repeat="x in gameBoard">
+			<td ng-repeat="y in x track by $index" class="tile tile{{y}}"> </td>
+		</tr>
+	</table>
+	<br />
+	<div>X: {{ position.x }}</div>
+	<div>Y: {{ position.y }}</div>
+	<form>
+		<input placeholder="Max 1378 turns" type="number" max="1378" required ng-model="iterations.count" name="iterations" />
+		<input type="submit" ng-click="play(iterations)" value="GO!" />
+	</form>
+</div>
+<br />
+<table id="legend">
+	<h1>LEGEND</h1>
+	<tr>
+		<th>WHITE Vacant</th>
+		<th>WHITE Occupied</th>
+		<th>BLACK Vacant</th>
+		<th>BLACK Occupied</th>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>2</td>
+		<td>1</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>White</td>
+		<td>Red</td>
+		<td>Black</td>
+		<td>Blue</td>
+	</tr>
+</table>
+<br />
+<h2>At this point the game can handle up to 1378 moves, at which point it hits the edge of the game board and breaks.</h2>
+<h2>As time goes on I will try to add features to this 'game' to try to turn it into an actual game.</h2>
+<h2>Some potential features are:</h2>
+<ul>
+	<li>Animated 'play'</li>
+	<li>Dynamically expanding board</li>
+	<li>Pattern recognition (given time, the game stabilizes in an infinite pattern)</li>
+	<li>Customizable game board</li>
+	<li>Puzzle boards:
+		<ul>
+			<li>Given a beginning point, customize the game board so that the ant hits a specific end point</li>
+			<li>Given a particular pre-populated game board, set the beginning point so that the ant hits a specific ending point</li>
+		</ul>
+	</li>
+	<li>And more things in mind that are potentially too ambitious for me to even mention!</li>
+</ul>
