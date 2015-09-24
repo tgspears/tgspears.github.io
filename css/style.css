@@ -1,30 +1,3 @@
-/*
-
-HEADERS / FOCUS TEXT
-
-Bench Nine (LIGHT 300)
-Comfortaa (LIGHT 300)
-
-Abel (NORMAL 400)
-Dosis (EXTRA-LIGHT 200)
-Yanone Kaffeesatz (EXTRA-LIGHT 200)
-Lato (THIN 100 or LIGHT 300)
-Roboto Condensed (LIGHT 300)
-
-
-BODY TEXT
-
-Abel (NORMAL 400)
-Dosis (EXTRA-LIGHT 200)
-Yanone Kaffeesatz (EXTRA-LIGHT 200)
-Lato (LIGHT 300)
-Roboto Condensed (LIGHT 300)
-
-*/
-
-
-/* GENERAL */
-
 html, body {
 	height: 100%; width: 100%; margin: 0;
 }
