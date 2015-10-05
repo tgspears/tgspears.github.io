@@ -17,7 +17,7 @@
 
 .tile {
 	border: 1px solid black;
-	background: purple;
+	background: yellow;
 }
 
 .tile0 {
@@ -34,6 +34,22 @@
 
 .tile3 {
 	background: blue;
+}
+
+.tile4 {
+	background: purple;
+}
+
+.tile5 {
+	background: purple;
+}
+
+.tile6 {
+	background: purple;
+}
+
+.tile7 {
+	background: purple;
 }
 
 iframe {
