@@ -13,9 +13,9 @@
 }
 
 #deck .card {
-	border: 1px solid black;
 	padding: 5px;
 	margin: 5px 0;
+	clear: both;
 }
 
 #deck .card h1 {
@@ -27,16 +27,18 @@
 	text-align: center;
 }
 
-#deck .card img {
-	width: 100%;
-	height: auto;
-}
-
 #deck #hello img {
 	height: 198px;
 	width: auto;
 	float: left;
 	margin-right: 5px;
+}
+
+#deck .card:not(#hello) img {
+	width: 80%;
+	height: auto;
+	float: left;
+	margin: 10px 10%;
 }
 
 #hello p:nth-of-type(1) {
@@ -50,13 +52,27 @@
 	}
 }
 
+@media (min-width: 520px) {
+	#deck #hello img {
+		margin-bottom: -50px;
+	}
+
+	#deck .card:not(#hello) img {
+		margin: 65px 5px 20px 0;
+	}
+
+	#deck .card:not(#hello) img {
+		width: 40%;
+	}
+}
+
 @media (min-width: 576px) {
 	#deck #hello img {
 		bottom: 68px;
 	}
 }
 
-@media (min-width: 720px) {
+@media (min-width: 737px) {
 	#main {
 		width: 720px;
 		margin: 0 auto;
@@ -70,5 +86,49 @@
 
 	#deck #hello p:nth-of-type(2) {
 		padding-left: 160px;
+	}
+
+	#deck .card:not(#hello) img {
+		width: 40%;
+		height: auto;
+		float: left;
+		margin: 0;
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 1024px) {
+	#main {
+		float: right;
+		width: 70vw;
+	}
+
+	#hello {
+		position: absolute;
+		width: 30vw;
+		height: 100%;
+		left: 0;
+	}
+
+	.card:not(#hello){
+		float: right;
+	}
+
+	#deck #hello p:nth-of-type(2) {
+		padding: 114% 30px 0 30px;
+	}
+
+	#deck #hello img {
+		width: 80%;
+    height: auto;
+    margin: 0px 9%;
+    position: absolute;
+    top: 96px;
+	}
+}
+
+@media (min-width: 1024px) and (min-height: 740px) {
+	#hello {
+		position: fixed;
 	}
 }
