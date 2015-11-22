@@ -36,6 +36,10 @@
 	display: inline-block;
 }
 
+.description-area p {
+	font-family: 'Roboto', sans-serif;
+}
+
 a .col-xs-6 .col-xs-12 {
 	padding: 0;
 }
