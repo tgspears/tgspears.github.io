@@ -1,0 +1,38 @@
+.contact-big-text {
+	text-align: center;
+}
+
+#email-icon {
+	height: auto;
+	width: 3em;
+}
+
+#github-icon {
+	height: auto;
+	width: 2.8em;
+	/*margin-left: 0.1em;*/
+}
+
+#linkedin-icon {
+	height: auto;
+	width: 3em;
+	/*margin-left: -0.1em;*/
+}
+
+#contact-resume-icon {
+	height: auto;
+    width: 2.85em;
+    margin-left: -0.05em;
+}
+
+#props {
+    position: fixed;
+    bottom: .5em;
+    right: 1.5em;
+}
+
+@media (min-width: 470px) {
+	.contact-big-text {
+		font-size: 2em;
+	}
+}

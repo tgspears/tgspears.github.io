@@ -7,6 +7,14 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routeProvi
       templateUrl: 'views/mainView.html',
       controller: 'mainController'
     })
+    .when('/contact', {
+    	templateUrl: 'views/contact.html',
+    	controller: 'mainController'
+    })
+    .when('/work', {
+      templateUrl: 'views/work.html',
+      controller: 'mainController'
+    })
     .otherwise({
       templateUrl: 'views/404.html'
     });

@@ -1,0 +1,108 @@
+.project-container .row {
+	margin: auto 0;
+}
+
+.project-image-container {
+	display: inline-block;
+	margin: .5em;
+}
+
+.project-image-container > a > .col-xs-12 {
+	background: rgba(155,155,155,.2);
+}
+
+.project-image-container img {
+	width: 100%;
+	height: auto;
+	padding: 1em;
+}
+
+.col-sm-7 > img {
+	padding-bottom: 0;
+}
+
+.project-image-container .col-xs-12, .project-image-container .col-xs-6 {
+	padding: 0;
+}
+
+.project-image-container .col-xs-12 .row {
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+.description-area h1, .description-area p {
+	padding-left: .5em;
+	padding-right: .5em;
+	display: inline-block;
+}
+
+a .col-xs-6 .col-xs-12 {
+	padding: 0;
+}
+
+.col-xs-6 > img {
+	margin-top: .5em;
+}
+
+#do-work {
+	text-align: center;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+#work-resume {
+	text-align: center;
+}
+
+.project-container .project-image-container .description-area {
+	padding: 0;
+	padding-left: 1.25em;
+}
+
+.project-container .project-image-container .description-area *	{
+	padding: 0;
+}
+
+#open-rex-image {
+	width: 1.75em;
+	margin-left: 0.5em;
+	margin-bottom: .75em;
+}
+
+@media (min-width: 768px) {
+
+	.project-container .project-image-container .description-area h1 {
+		margin-top: 0;
+	}
+
+	#work-resume {
+		margin: .75em;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.project-container h2 {
+		font-size: 5em;
+	}
+
+	.description-area h1 {
+		font-size: 3em;
+	}
+
+	.description-area img {
+		width: 3.5em;
+    	margin-bottom: 1.2em;
+	}
+
+	.description-area p {
+		font-size: 1.25em;
+	}
+
+	#open-rex-image {
+		width: 3em;
+		margin-bottom: 1.5em;
+	}
+
+}

@@ -1,13 +1,7 @@
 // On load, center the nav
 $(document).ready(function(){
 
-	$("#nav-container").css("margin-right", ($(window).width()-$("#nav-container").width())/2);
+	// This is here for a reason, I promise!
+	// Going to be adding fun stuff soon.
 
-})
-
-// On window resize, center the nav
-$(window).resize(function(){
-
-	$("#nav-container").css("margin-right", ($(window).width()-$("#nav-container").width())/2);
-
-})
+});

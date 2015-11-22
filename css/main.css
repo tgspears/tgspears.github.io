@@ -1,134 +1,36 @@
-#main {
-	margin: 0 10px;
-	overflow-x: hidden;
+#resume-column a {
+	display: inline-block;
 }
 
-#deck {
-	margin-top: 35px;
-	margin-bottom: 10px;
-}
-
-#deck a {
-	color: #101a59;
-}
-
-#deck .card {
-	padding: 5px;
-	margin: 5px 0;
-	clear: both;
-}
-
-#deck .card h1 {
-	margin-top: 5px;
-	text-align: center;
-}
-
-#deck .card h2 {
-	text-align: center;
-}
-
-#deck #hello img {
-	height: 198px;
-	width: auto;
-	float: left;
-	margin-right: 5px;
-}
-
-#deck .card:not(#hello) img {
-	width: 80%;
+#hero-image {
+	width: 50%;
 	height: auto;
-	float: left;
-	margin: 10px 10%;
+	border-radius: 100%;
 }
 
-#hello p:nth-of-type(1) {
+#hero-container {
 	text-align: center;
 }
 
-@media (min-width: 504px) {
-	#deck #hello img {
-		position: relative;
-		bottom: 26px;
-	}
-}
+@media (min-width: 992px) {
 
-@media (min-width: 520px) {
-	#deck #hello img {
-		margin-bottom: -50px;
+	#hero-image {
+	    width: 28%;
+	    border: 7px solid black;
+	    padding: 8px;
+	    margin-bottom: .5em;
 	}
 
-	#deck .card:not(#hello) img {
-		margin: 65px 5px 20px 0;
+	#first-hero-text {
+		margin-bottom: .25em;
 	}
 
-	#deck .card:not(#hello) img {
-		width: 40%;
-	}
-}
-
-@media (min-width: 576px) {
-	#deck #hello img {
-		bottom: 68px;
-	}
-}
-
-@media (min-width: 737px) {
-	#main {
-		width: 720px;
-		margin: 0 auto;
-		margin-top: 30px;
+	#second-hero-text {
+		margin-top: .25em;
 	}
 
-	#deck #hello img {
-		position: absolute;
-		top: 76px;
+	#main-contact-item {
+		padding-top: 10em;
 	}
 
-	#deck #hello p:nth-of-type(2) {
-		padding-left: 160px;
-	}
-
-	#deck .card:not(#hello) img {
-		width: 40%;
-		height: auto;
-		float: left;
-		margin: 0;
-		margin-right: 10px;
-	}
-}
-
-@media (min-width: 1024px) {
-	#main {
-		float: right;
-		width: 70vw;
-	}
-
-	#hello {
-		position: absolute;
-		width: 30vw;
-		height: 100%;
-		left: 0;
-	}
-
-	.card:not(#hello){
-		float: right;
-	}
-
-	#deck #hello p:nth-of-type(2) {
-		padding: 114% 30px 0 30px;
-	}
-
-	#deck #hello img {
-		width: 80%;
-    height: auto;
-    margin: 0px 9%;
-    position: absolute;
-    top: 96px;
-	}
-}
-
-@media (min-width: 1024px) and (min-height: 740px) {
-	#hello {
-		position: fixed;
-	}
 }
