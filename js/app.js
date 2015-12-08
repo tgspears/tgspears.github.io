@@ -1,4 +1,4 @@
-var portfolioApp = angular.module('PortfolioApp', ['ngAnimate','ngRoute']);
+var portfolioApp = angular.module('PortfolioApp', ['ngRoute']);
 
 portfolioApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
