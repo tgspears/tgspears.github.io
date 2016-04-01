@@ -1,26 +1,10 @@
-/*==========  Mobile First Method  ==========*/
+REX
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-    
-}
+An app for travel enthusiasts and casual tourists alike. Keep track of and easily share fun and exciting locations from your explorations! Search for that restaurant or place you want to make note of, and then add the location to one of your lists. You can send each location as a recommendation to friends and family through email. Potential next steps for the project include adding the ability to send entire lists as recommendationsand  a feature to have friends and to request recommendations from them.
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+        Final project of the Web Development Immersive program at General Assembly. From concept to deployment in one week with one partner - Lauren Go - using the MEAN stack, Sails.js, Materialize CSS & Angular Material. Search powered by the Yelp API and emails handled by SendGrid.
 
-}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+DAYSIE CHAIN
 
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
+Daysie Chain allows you to quickly and easily organize your social life. You can create groups for specific events such as Saturday football games, D & D nights with the crew, or the monthly Ladies' Night or Chinese takeout night with the guys. Add potential attendees to the group using their phone number and click send! Our service sends out a text to group members and allows them to RSVP through text. You can then track attendance and send reminders to those that haven't responded. No more difficult-to-manage group texts or confusion about time or date.
