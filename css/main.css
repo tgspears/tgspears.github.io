@@ -833,8 +833,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 .project-description {
 	background: white;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 15px 15px 0 15px;
 }
 
 .project-description div p {
