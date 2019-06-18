@@ -17,9 +17,11 @@ function($) {
 		$(window).scroll(function(event){
    			var st = $(this).scrollTop();
    			if (st > lastScrollTop){
-       			scrollDir = 'down';
+				   scrollDir = 'down';
+				   console.log("scroll down");
    			} else {
-      			scrollDir = 'up';
+				  scrollDir = 'up';
+				  console.log("scroll up");
    			}
   			lastScrollTop = st;
 		});

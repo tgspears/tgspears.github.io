@@ -56,7 +56,7 @@
     
   	<!--menu start-->
     <div class="menu">
-      <div class="navbar-wrapper">
+      <div class="navbar-wrapper stuckMenu isStuck">
         <div class="container">
           <div class="navwrapper">
             <div class="navbar navbar-inverse navbar-static-top">
@@ -68,13 +68,13 @@
                      <!-- <a class="navbar-brand" href="#">Menu</a>  --></div>
                     <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
-                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
-                        <li class="menuItem"><a href="#aboutus">About Me</a></li>
-                        <li class="menuItem"><a href="#myexperties">Skills</a></li>
-                        <li class="menuItem"><a href="#ourwork">Projects</a></li>
-                        <li class="menuItem"><a href="#experience">Experience</a></li>
-                        <li class="menuItem"><a href="#education">Education</a></li>
-                        <li class="menuItem"><a href="#contact">Contact</a></li>
+                        <li class="menuItem active"><a id="home" href="#wrapper">Home</a></li>
+                        <li class="menuItem"><a id="aboutme" href="#aboutme">About Me</a></li>
+                        <li class="menuItem"><a id="skills" href="#skills">Skills</a></li>
+                        <li class="menuItem"><a id="projects" href="#projects">Projects</a></li>
+                        <li class="menuItem"><a id="experience" href="#experience">Experience</a></li>
+                        <li class="menuItem"><a id="education" href="#education">Education</a></li>
+                        <li class="menuItem"><a id="contact" href="#contact">Contact</a></li>
                       </ul>
                     </div>
                 </div>
@@ -90,12 +90,12 @@
   <!--Header end -->
   
  <!--about us start-->
-  <section class="aboutus" id="aboutus">
+  <section class="aboutme" id="aboutme">
     <div class="container">
       <div class="row">
        <div class="col-md-12">
       	<div class="heading">
-          <h2>About <span>Myself</span></h2>
+          <h2>About <span>Me</span></h2>
         </div>
       </div> 
        </div> 
@@ -169,10 +169,10 @@
             <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <div>
                   <h4 style="margin-bottom:15px;font-size:30px;">Languages</h4>
-                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">RUBY</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">JAVASCRIPT</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">HTML5</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">CSS3</span>
+                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">RUBY</span>
                 </div>
             </div>
          </div>
@@ -188,10 +188,9 @@
             <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
               <div>
                 <h4 style="margin-bottom:15px;font-size:30px;">Frameworks</h4>
-                <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">RAILS</span>
-                <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">ANGULARJS</span>
-                <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">EXPRESS.JS</span>
                 <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">NODE.JS</span>
+                <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">ANGULARJS</span>
+                <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3; line-height:3;">NIGHTWATCH.JS</span>
               </div>
             </div>
           </div>
@@ -217,23 +216,6 @@
             </div>
         </div>
   </div>
-
-  <div class="col-xs-12 col-md-6">
-        <div class="row media">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <div class="expertiesico" style="border-right:none;">
-                    <span class="ico"><i class="fa fa-rocket fa-5x"></i></span>
-                </div>
-            </div>
-            <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-                <div>
-                  <h4 style="margin-bottom:15px;font-size:30px;">Testing</h4>
-                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">RSPEC</span>
-                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">TDD</span>
-                </div>
-            </div>
-        </div>
-  </div>
 </div>
 
 <!-- third row -->
@@ -249,11 +231,10 @@
             <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
                 <div>
                   <h4 style="margin-bottom:15px;font-size:30px;">Other technologies</h4>
-                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">BOOTSTRAP</span>
+                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">HTML&sol;CSS&nbsp;LIBRARIES</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">GIT/GITHUB</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">JQUERY</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">HEROKU</span>
-                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">AJAX</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">JSON</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">REST&nbsp;APIS</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">REFINERY&nbsp;CMS</span>
@@ -274,6 +255,7 @@
                 <div>
                   <h4 style="margin-bottom:15px;font-size:30px;">Professional</h4>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">QUICK&nbsp;LEARNER</span>
+                  <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">DILIGENT</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">SELF&nbsp;STARTER</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">CURIOUS</span>
                   <span style="font-size:20px; border:2px solid darkgray; padding:10px; margin-right:15px; border-radius:6%; color:#ff5e56; line-height:3;">ADAPTABLE</span>
@@ -580,15 +562,15 @@
   $(document).ready( function() {
     //enabling stickUp on the '.navbar-wrapper' class
   	$('.navbar-wrapper').stickUp({
-  		parts: {
-  		  0: 'banner',
-  		  1: 'aboutus',
-        2: 'experties',
-  		  3: 'ourwork',
-  		  4: 'myexperience',
+      parts: {
+        0: 'home',
+        1: 'aboutme',
+        2: 'skills',
+        3: 'projcets',
+        4: 'experience',
         5: 'education',
-  		  6: 'contact'
-  		},
+        6: 'contact'
+      },
   		itemClass: 'menuItem',
   		itemHover: 'active',
   		topMargin: 'auto'

@@ -3,11 +3,13 @@ $(document).ready( function() {
   //enabling stickUp on the '.navbar-wrapper' class
 	$('.navbar-wrapper').stickUp({
 		parts: {
-		  0: 'banner',
-		  1: 'aboutus',
-		  2: 'protfolio',
-		  3: 'experience',
-		  4: 'contact'
+		  0: 'home',
+		  1: 'aboutme',
+		  2: 'skills',
+		  3: 'projcets',
+			4: 'experience',
+			5: 'education',
+			6: 'contact'
 		},
 		itemClass: 'menuItem',
 		itemHover: 'active',
@@ -19,11 +21,9 @@ $(document).ready( function() {
 	  $( ".navbar-collapse" ).addClass( "hideClass" );
 	});
 	
-	
 	$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
 	  $( ".navbar-collapse" ).addClass( "collapse" );
 	});
-	
 	
 	$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
 	  $( ".navbar-collapse" ).removeClass( "in" );

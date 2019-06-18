@@ -417,23 +417,23 @@ header{
 /*----------------------------------------------------
 	4. About Us Style
 ------------------------------------------------------*/
-.aboutus{
+.aboutme{
 	background:#ffffff;
 	text-align:left;
 }
-.aboutus .container{
+.aboutme .container{
 	padding-top:122px ;
 	padding-bottom:122px ;
 	border-bottom: 2px solid #323641;
 }
 
-.aboutus .heading p{
+.aboutme .heading p{
 	padding-bottom:41px;
 }
-.aboutus h4 {
+.aboutme h4 {
 	padding-bottom:30px;
 }
-.aboutus .btn-primary {
+.aboutme .btn-primary {
 	background:#323641;
 	line-height:30px;
 	font-size:20px;
@@ -442,7 +442,7 @@ header{
 	border:none;
 	border-radius: 0;
 }
-.aboutus .btn-primary:hover {
+.aboutme .btn-primary:hover {
 	background:#ff675f;
 }
 .skillset {
@@ -916,9 +916,9 @@ ul.portfolioContainer li {
 	padding-bottom:20px;
 	color:#4f525a;
 }
-.contactDetails p{
+/* .contactDetails p{
 
-}
+} */
 .contactDetails p a{
 	color:#93959c;
 }
@@ -1368,14 +1368,14 @@ ul.portfolioContainer li {
 		font-size: 18px;
 		line-height:24px;
 	}
-	.aboutus .container {
+	.aboutme .container {
 		padding-top:60px;
 		padding-bottom:60px;
 	}
-	.aboutus h3 {
+	.aboutme h3 {
 		padding-top:20px;
 	}
-	.aboutus .btn-primary {
+	.aboutme .btn-primary {
 		font-size:14px;
 	}
 	.expertiesico {
