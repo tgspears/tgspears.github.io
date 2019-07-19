@@ -275,10 +275,6 @@ header{
 	background:url(../images/logo.png) no-repeat 0 0;
 }
 
-.navArea{
-	/*float:right;*/
-}
-
 .navwrapper .container{
 	padding:0;
 	width:auto;
@@ -394,9 +390,7 @@ header{
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -479,9 +473,7 @@ header{
 	padding-top:117px ;
 	padding-bottom:59px ;
 }
-.myexperties .heading {
-	padding-bottom:111px;
-}
+
 .expertiesico {
 	padding:10px 0;
 	margin-bottom:58px;
@@ -548,6 +540,9 @@ header{
 }
 
 
+.protfolio .protfolioContainer{
+	padding-top: 0;
+}
 
 .portfolioFilter{
 	display:block;
@@ -601,15 +596,18 @@ ul.portfolioContainer{
 	display:block;
 	padding:0px;
 	margin-bottom:0;
+	margin-left:0;
 	list-style-type:none;
+	background:#323641
 }
 ul.portfolioContainer li{
 	display:block;
 	/*min-height:205px;*/
 	padding:0px;
 	margin:0px;
+	margin-bottom: 85px;
 	cursor:pointer;
-	width:24.8%;
+	min-width:24.8%;
 }
 ul.portfolioContainer li .lightCon{
 	display:block;
@@ -834,14 +832,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 .project-description {
 	background: white;
 	padding: 15px 15px 0 15px;
+	height: 350px;
 }
 
 .project-description div p {
 	padding-bottom: 0;
-}
-
-.project-description {
-	height: 450px;
 }
 
 ul.portfolioContainer li {
@@ -1251,6 +1246,16 @@ ul.portfolioContainer li {
 	}
 	.conForm input.col-lg-6 {
 		width: 48.5%;
+	}
+	
+	ul.portfolioContainer li.col-sm-4{
+		width: 32.33333333333333%;
+	}
+	ul.portfolioContainer li.col-sm-push-1{
+		left:1.5%;
+	}
+	ul.portfolioContainer li.col-sm-push-2{
+		left:3%;
 	}
 }
 
