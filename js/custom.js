@@ -46,5 +46,38 @@
       }
     });
   });
+  $(function(){
+    $('.paramount-slider').slick({
+      autoplay      : true,
+      autoplaySpeed : 1900,
+      arrows        : false,
+      draggable     : false
+    });
+    // $('.paramount-slider').slick('slickPause').delay(500).slick('slickPlay');
+
+    $('.or-slider').slick({
+      autoplay      : true,
+      autoplaySpeed : 1950,
+      arrows        : false,
+      draggable     : false
+    });
+    // $('.or-slider').slick('slickPause').delay(1000).slick('slickPlay');
+
+    $('.hydro-slider').slick({
+      autoplay      : true,
+      autoplaySpeed : 2000,
+      arrows        : false,
+      draggable     : false
+    });
+    // $('.hydro-slider').slick('slickPause').delay(1500).slick('slickPlay');
+
+    $('.msr-slider').slick({
+      autoplay      : true,
+      autoplaySpeed : 2050,
+      arrows        : false,
+      draggable     : false
+    });
+    // $('.msr-slider').slick('slickPause').delay(2000).slick('slickPlay');
+  })
 
 }(jQuery));
