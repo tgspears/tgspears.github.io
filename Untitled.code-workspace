@@ -1,9 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "tgspears.github.io",
-			"path": "."
-		}
-	],
-	"settings": {}
+    "settings": {
+        "files.exclude": {
+            "**/.DS_Store": false
+        }
+    }
 }
