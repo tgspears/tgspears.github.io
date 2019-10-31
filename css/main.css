@@ -246,6 +246,11 @@ header{
 	border-color:#ff675f;
 }
 
+.slides-container {
+	background-image: url("../images/heroImage.jpg");
+	background-size: cover;
+}
+
 
 /*----------------------------------------------------
  	3.1 Menu Style
@@ -833,6 +838,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	background: white;
 	padding: 15px 15px 0 15px;
 	height: 350px;
+	overflow-y: scroll;
 }
 
 .project-description div p {
@@ -911,9 +917,12 @@ ul.portfolioContainer li {
 	padding-bottom:20px;
 	color:#4f525a;
 }
-/* .contactDetails p{
 
-} */
+.emailLink {
+	text-decoration: underline;
+	color: #323641;
+}
+
 .contactDetails p a{
 	color:#93959c;
 }
