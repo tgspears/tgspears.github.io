@@ -1,0 +1,104 @@
+// GENERAL
+
+@font-face {
+    font-family: "Castoro Regular";
+    src: url("../resources/Castoro/Castoro-Regular.ttf");
+}
+@font-face {
+    font-family: "Castoro Italics";
+    src: url("../resources/Castoro/Castoro-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("../resources/Nunito/Nunito-Regular.ttf");
+}
+
+@font-header: "Castoro Regular";
+@font-main: "Nunito Regular";
+@font-italics: "Castoro Italics";
+
+@color-main: #000;
+@color-accent: #E5E5E5;
+@color-pop: #FF675F;
+
+.pop {
+    color: @color-pop;
+}
+
+.italics {
+    font-family: @font-italics;
+}
+
+.no-margin-top {
+    margin-block-start: 0px;
+}
+
+* {
+    color: @color-main;
+    font-family: @font-main, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: @font-header, Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+#about {
+    height: 100vh;
+    h1.pop {
+        margin-block-start: 10%;
+        margin-block-end: 5px;
+    }
+    h1.pop + h1 {
+        margin-block-start: 0px;
+        margin-block-end: 28px;
+    }
+}
+
+#face-box {
+    &:hover #face {
+        display: none;
+    }
+    &:hover #about-face {
+        display: block;
+    }
+}
+
+#face {
+    display: block;
+}
+
+#about-face {
+    display: none;
+}
+
+.project {
+    padding-top: 50px;
+}
+
+.project:nth-child(odd) {
+    background-color: @color-pop;
+}
+
+.project:nth-child(even) {
+    background-color: @color-accent;
+}
+
+// NAVIGATION
+
+#navigation {
+    background-color: @color-pop;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+}
