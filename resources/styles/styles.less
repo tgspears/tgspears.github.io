@@ -1,0 +1,215 @@
+// Fonts
+
+@font-face {
+    font-family: "Castoro Regular";
+    src: url("../Castoro/Castoro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../Inter/static/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("../Nunito/NunitoSans-Regular.ttf");
+}
+
+.castoro-regular {
+    font-family: "Castoro Regular";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.castoro-large {
+    font-family: "Castoro Regular";
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.inter-regular {
+    font-family: "Inter Regular";
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.inter-small {
+    font-family: "Inter Regular";
+    font-size: 0.825rem;
+    font-weight: 400;
+}
+
+.inter-bold {
+    font-family: "Inter Regular";
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nunito-regular {
+    font-family: "Nunito Regular";
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.nunito-small {
+    font-family: "Nunito Regular";
+    font-size: 0.825rem;
+}
+
+// General
+
+* {
+    color: @main-black;
+    font-family: "Nunito Regular";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+html {
+    // I'm not happy about having to touch the HTML element but
+    // something about using 100vw for the accent-background-fix
+    // is causing a small amount of horizontal scroll
+    // so I'm just using this to hide the bug
+
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+@main-black: #000;
+@main-white: #fff;
+@accent-grey: #f5f5f5;
+@pop-pink: #FF675F;
+
+.pop-pink {
+    color: @pop-pink;
+}
+
+.no-margin-top {
+    margin-block-start: 0px;
+}
+
+.accent-background {
+    background-color: @accent-grey;
+}
+
+.full-view {
+    height: 100vh;
+}
+
+#about-me {
+    h1.pop-pink {
+        margin-block-start: 10%;
+        margin-block-end: 5px;
+    }
+
+    h1.pop-pink + h1 {
+        margin-block-start: 0px;
+        margin-block-end: 28px;
+    }
+}
+
+#face-box {
+    #face {
+        display: block;
+    }
+
+    #about-face {
+        display: none;
+    }
+
+    &:hover #face {
+        display: none;
+    }
+
+    &:hover #about-face {
+        display: block;
+    }
+}
+
+#skills, #experience {
+    height: 100vh;
+
+    p {
+        margin-block-start: 3.5rem;
+    }
+
+    h3 {
+        margin-block-start: 6rem;
+    }
+
+    h4 {
+        margin-block-start: 0.825rem;
+    }
+
+    .accent-background-fix {
+        height:100%;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        background-color: @accent-grey;
+    }
+}
+
+#latest-projects {
+    margin-block-end: 5.5rem;
+    
+    .project {
+        padding-top: 50px;
+
+        .project-description {
+            h1 {
+                margin-block-end: 0;
+            }
+            p {
+                margin-block-start: 0;
+                margin-block-end: 6px;
+            }
+        }
+
+        .project-highlight {
+            h3 {
+                margin-block-start: 12px;
+                margin-block-end: 12px;
+            }
+            p {
+                margin-block-end: 14px;
+            }
+        }
+    }
+}
+
+#contact {
+    h2 {
+        margin-block-start: 6rem;
+    }
+}
+
+// NAVIGATION
+
+#navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+
+    a {
+        font-family: "Castoro Regular";
+        font-size: 1.25rem;
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        padding: 0px 7px;
+    }
+
+    .active-nav {
+        background-color: @main-black;
+        color: @main-white;
+    }
+}

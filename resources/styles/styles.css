@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Castoro Regular";
+  src: url("../Castoro/Castoro-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter Regular";
+  src: url("../Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../Inter/static/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "Nunito Regular";
+  src: url("../Nunito/NunitoSans-Regular.ttf");
+}
+.castoro-regular {
+  font-family: "Castoro Regular";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.castoro-large {
+  font-family: "Castoro Regular";
+  font-size: 4rem;
+  font-weight: 400;
+}
+.inter-regular {
+  font-family: "Inter Regular";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.inter-small {
+  font-family: "Inter Regular";
+  font-size: 0.825rem;
+  font-weight: 400;
+}
+.inter-bold {
+  font-family: "Inter Regular";
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nunito-regular {
+  font-family: "Nunito Regular";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.nunito-small {
+  font-family: "Nunito Regular";
+  font-size: 0.825rem;
+}
+* {
+  color: #000;
+  font-family: "Nunito Regular";
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+html {
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+.pop-pink {
+  color: #FF675F;
+}
+.no-margin-top {
+  margin-block-start: 0px;
+}
+.accent-background {
+  background-color: #f5f5f5;
+}
+.full-view {
+  height: 100vh;
+}
+#about-me h1.pop-pink {
+  margin-block-start: 10%;
+  margin-block-end: 5px;
+}
+#about-me h1.pop-pink + h1 {
+  margin-block-start: 0px;
+  margin-block-end: 28px;
+}
+#face-box #face {
+  display: block;
+}
+#face-box #about-face {
+  display: none;
+}
+#face-box:hover #face {
+  display: none;
+}
+#face-box:hover #about-face {
+  display: block;
+}
+#skills,
+#experience {
+  height: 100vh;
+}
+#skills p,
+#experience p {
+  margin-block-start: 3.5rem;
+}
+#skills h3,
+#experience h3 {
+  margin-block-start: 6rem;
+}
+#skills h4,
+#experience h4 {
+  margin-block-start: 0.825rem;
+}
+#skills .accent-background-fix,
+#experience .accent-background-fix {
+  height: 100%;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f5f5f5;
+}
+#latest-projects {
+  margin-block-end: 5.5rem;
+}
+#latest-projects .project {
+  padding-top: 50px;
+}
+#latest-projects .project .project-description h1 {
+  margin-block-end: 0;
+}
+#latest-projects .project .project-description p {
+  margin-block-start: 0;
+  margin-block-end: 6px;
+}
+#latest-projects .project .project-highlight h3 {
+  margin-block-start: 12px;
+  margin-block-end: 12px;
+}
+#latest-projects .project .project-highlight p {
+  margin-block-end: 14px;
+}
+#contact h2 {
+  margin-block-start: 6rem;
+}
+#navigation {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+}
+#navigation a {
+  font-family: "Castoro Regular";
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  padding: 0px 7px;
+}
+#navigation .active-nav {
+  background-color: #000;
+  color: #fff;
+}
