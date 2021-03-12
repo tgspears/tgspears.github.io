@@ -7,11 +7,13 @@
         <meta name="description" content="The portfolio page for Trevor Spears (That's me!)">
         <link rel="stylesheet" href="resources/styles/simple-grid.css">
         <link rel="stylesheet" href="resources/styles/styles.css">
+        <script type = "text/javascript" src = "js/jquery-3.6.0.slim.min.js"></script>
+        <script type = "text/javascript" src = "js/index.js"></script>
     </head>
     <body>
     <div class="container">
     <!-- ABOUT ME -->
-        <div id="about-me" class="row full-view">
+        <div id="about-me" class="row section full-view">
             <div class="col-12">
                 <h1 class="pop-pink castoro-large">Hello!</h1>
                 <h1 class="castoro-large">I'm Trevor Spears</h1>
@@ -26,104 +28,115 @@
             </div>
         </div>
     <!-- SKILLS -->
-        <div id="skills" class="row inter-bold accent-background">
+        <div id="skills" class="row section inter-bold full-view">
             <div class="col-12">
-                <h3 class="inter-bold">Skills</h3>
+                <h3 class="castoro-large">Skills</h3>
             </div>
             <div class="col-4">
+                <img class="section-icon" src="resources/images/languages-icon.svg">
                 <h4 class="inter-regular">Languages/Frameworks</h4>
-                <p class="inter-small">Javascript, HTML5, CSS3, * Ruby, * PostgreSQL, * MongoDB, JSON, REST APIs. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="skill-section">
+                    <p class="tile">Javascript</p>
+                    <p class="tile">HTML5</p>
+                    <p class="tile">CSS3</p>
+                    <p class="tile">Ruby</p>
+                    <p class="tile">PostgreSQL</p>
+                    <p class="tile">MongoDB</p>
+                    <p class="tile">JSON</p>
+                    <p class="tile">REST APIs</p>
+                </div>
             </div>
             <div class="col-4">
+                <img class="section-icon" src="resources/images/tools-icon.svg">
                 <h4 class="inter-regular">Tools</h4>
-                <p class="inter-small">JQuery, * Node, * Angular, Nightwatch, Bootstrap, Material. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="skill-section">
+                    <p class="tile">JQuery</p>
+                    <p class="tile">Node</p>
+                    <p class="tile">Angular</p>
+                    <p class="tile">Nightwatch</p>
+                    <p class="tile">Bootstrap</p>
+                    <p class="tile">Material</p>
+                </div>
             </div>
             <div class="col-4">
+                <img class="section-icon" src="resources/images/professional-icon.svg">
                 <h4 class="inter-regular">Professional</h4>
-                <p class="inter-small">Git / Github, Screaming Frog, Heroku, Refinery CMS, Blazemeter, * Magento, Excel / Sheets. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
+                <div class="skill-section">
+                    <p class="tile">Git / Github</p>
+                    <p class="tile">Screaming Frog</p>
+                    <p class="tile">Heroku</p>
+                    <p class="tile">Refinery CMS</p>
+                    <p class="tile">Blazemeter</p>
+                    <p class="tile">Magento</p>
+                    <p class="tile">Excel / Sheets</p>
+                </div>
             </div>
-            <div class="accent-background-fix"></div>
+            <div class="accent-background background-fix"></div>
         </div>
     <!-- LATEST PROJECTS -->
-        <div id="latest-projects">
+        <div id="latest-projects" class="row section inter-bold">
         <!-- MERCUTIO -->
-            <div id="mercutio" class="row project">
-                <div class="col-12 project-description">
+            <div id="mercutio" class="row project full-view">
+                <div class="col-6 project-description">
                     <h1 class="pop-pink castoro-large">MERCUTIO</h1>
                     <p class="nunito-regular">tldr: I worked with a bunch of cool companies and made the best testing framework that caught every bug known to man kind.</p>
                 </div>
-                <div class="col-6">
-                    <img class="project-image" src="resources/images/mercutio/mercutio.png">
+                <div class="col-6 image-group">
+                    <img class="project-image .offset-image" src="resources/images/mercutio/mercutio.png">
+                    <img class="project-image offset-image offset-right" src="resources/images/mercutio/blazeMeter.png">
                 </div>
                 <div class="col-6">
-                    <img class="project-image" src="resources/images/mercutio/blazeMeter.png">
+                    <img src="resources/images/mercutio/nightwatchJS.png">
                 </div>
-                <div class="col-12 project-highlight">
+                <div class="col-6 project-highlight">
                     <h3 class="castoro-regular">Highlight: QA Testing Framework</h3>
                     <p class="nunito-small">I created a front-end testing product from scratch that we sold as a package to our customers. This framework analyzed CSS and other stuff. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="col-12">
-                    <img src="resources/images/mercutio/nightwatchJS.png">
-                </div>
             </div>
         <!-- PARAMOUNT -->
-            <div id="paramount" class="row project">
-                <div class="col-12 project-description">
+            <div id="paramount" class="row project full-view accent-background">
+                <div class="col-6 project-description">
                     <h1 class="pop-pink castoro-large">PARAMOUNT</h1>
                     <p class="nunito-regular">tldr: I created the corporate website from scratch, worked with business stakeholders and integrated with a CMS (Refinery).</p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 image-group">
                     <img class="project-image" src="resources/images/paramount/paramountHome.png">
+                    <img class="project-image offset-image offset-left" src="resources/images/paramount/paramountProducts.png">
                 </div>
                 <div class="col-6">
-                    <img class="project-image" src="resources/images/paramount/paramountProducts.png">
-                </div>
-                <div class="col-12 project-highlight">
-                    <h3 class="castoro-regular">Highlight: Timeline Animation</h3>
-                    <p class="nunito-small">Using the latest cutting edge CSS3 frameworks of the time I created an interactive historical experience that immerses viewers into the 70 year history of Paramount.</p>
-                </div>
-                <div class="col-12">
                     <img class="highlight-image" src="resources/images/gifs/paramountHistoryScroll.gif">
                 </div>
+                <div class="col-6 project-highlight">
+                    <h3 class="castoro-regular">Highlight: UI</h3>
+                    <p class="nunito-small">Using the latest cutting edge CSS3 frameworks of the time I created an interactive historical experience that immerses viewers into the 70 year history of Paramount.</p>
+                </div>
+                <div class="accent-background background-fix"></div>
             </div>
         </div>
     <!-- EXPERIENCE -->
-        <div id="experience" class="row inter-bold accent-background">
+        <div id="experience" class="row section inter-bold full-view">
             <div class="col-12">
                 <h3 class="inter-bold">Experience</h3>
             </div>
             <div class="col-4">
                 <h4 class="inter-regular">Languages/Frameworks</h4>
-                <p class="inter-small">Javascript, HTML5, CSS3, * Ruby, * PostgreSQL, * MongoDB, JSON, REST APIs. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="inter-small">Javascript, HTML5, CSS3, Ruby, PostgreSQL, MongoDB, JSON, REST APIs. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="col-4">
                 <h4 class="inter-regular">Tools</h4>
-                <p class="inter-small">JQuery, * Node, * Angular, Nightwatch, Bootstrap, Material. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="inter-small">JQuery, Node, Angular, Nightwatch, Bootstrap, Material. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="col-4">
                 <h4 class="inter-regular">Professional</h4>
-                <p class="inter-small">Git / Github, Screaming Frog, Heroku, Refinery CMS, Blazemeter, * Magento, Excel / Sheets. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
-            </div>
-            <div class="accent-background-fix"></div>
-        </div>
-    <!-- CONTACT -->
-        <div id="contact" class="row">
-            <div class="col-12">
-                <h2 class="inter-bold">CONTACT ME</h2>
-                <ul id="contact-options">
-                    <p class="inter-small">tg.spears@gmail.com</p>
-                    <p><a class="inter-small" href="https://github.com/tgspears" target="_blank">Github</a></p>
-                    <p><a class="inter-small" href="https://www.linkedin.com/in/trevorspears" target="_blank">LinkedIn</a></p>
-                </ul>
+                <p class="inter-small">Git / Github, Screaming Frog, Heroku, Refinery CMS, Blazemeter, Magento, Excel / Sheets. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
             </div>
         </div>
     <!-- NAVIGATION -->
         <div id="navigation">
-            <a href="#about-me">About Me</a>
+            <a href="#about-me" class="active-nav">About Me</a>
             <a href="#skills">Skills</a>
-            <a class="active-nav" href="#latest-projects">Latest Projects</a>
+            <a href="#latest-projects">Latest Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
         </div>
     </div>
     </body>
