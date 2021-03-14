@@ -48,6 +48,22 @@
   font-family: "Nunito Regular";
   font-size: 0.825rem;
 }
+@keyframes emboss {
+  from {
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
+  }
+  to {
+    box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
+  }
+}
+@keyframes deboss {
+  from {
+    box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
+  }
+  to {
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
+  }
+}
 * {
   color: #000;
   font-family: "Nunito Regular";
@@ -68,25 +84,37 @@ img {
   margin-block-start: 0px;
 }
 .accent-background {
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 .background-fix {
   height: 100%;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 130%;
+  margin-left: calc(-50vw + 25%);
+  padding-left: 16rem;
+  position: absolute;
+  z-index: -1;
 }
 .full-view {
-  height: 100vh;
+  min-height: 100vh;
+}
+.padded-bottom {
+  padding-bottom: 8.5rem;
 }
 .tile {
   font-family: "Inter Regular";
   font-size: 1.25rem;
   font-weight: 400;
   display: inline-block;
-  padding: 0.3125rem;
-  margin-block-start: 0.25rem;
-  margin-block-end: 0.25rem;
-  box-shadow: 0.3125rem 0.3125rem 0.3125rem #ddd;
+  padding: 0.5rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.section div:first-child {
+  margin-top: 5rem;
 }
 #about-me h1.pop-pink {
   margin-block-start: 10%;
@@ -95,6 +123,9 @@ img {
 #about-me h1.pop-pink + h1 {
   margin-block-start: 0px;
   margin-block-end: 28px;
+}
+#about-me > .col-12 {
+  margin-top: 0;
 }
 #face-box #face {
   display: block;
@@ -118,9 +149,6 @@ img {
 #skills h4 {
   margin-block-start: 0.825rem;
 }
-#latest-projects .project {
-  padding-top: 3 rem;
-}
 #latest-projects .project .project-description h1 {
   margin-block-end: 0;
 }
@@ -138,6 +166,7 @@ img {
 #latest-projects .project .image-group {
   position: relative;
   padding-bottom: 7rem;
+  top: 5rem;
 }
 #latest-projects .project .offset-image {
   position: absolute;
@@ -171,6 +200,10 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 2%;
+  padding: 2rem 1.5rem;
+  border-radius: 0.25rem;
+  background: #e5e5e5;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem #6c6c6c, inset -0.5rem -0.5rem 0.5rem #d8d8d8;
 }
 #navigation a {
   font-family: "Castoro Regular";
@@ -178,9 +211,11 @@ img {
   font-weight: 400;
   display: block;
   text-decoration: none;
-  padding: 0px 7px;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
 }
 #navigation .active-nav {
-  background-color: #000;
-  color: #fff;
+  box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
 }

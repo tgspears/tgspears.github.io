@@ -3,7 +3,7 @@ $(document).ready(function(){
         var position = $(this).scrollTop();
 
         $(".section").each(function() {
-            var target = $(this).offset().top;
+            var target = $(this).offset().top - 10;
             var id = $(this).attr('id');
 
             if (position >= target) {
