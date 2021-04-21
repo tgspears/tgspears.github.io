@@ -19,6 +19,11 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
+.castoro-medium {
+  font-family: "Castoro Regular";
+  font-size: 1.25rem;
+  font-weight: 400;
+}
 .castoro-large {
   font-family: "Castoro Regular";
   font-size: 4rem;
@@ -27,6 +32,11 @@
 .inter-regular {
   font-family: "Inter Regular";
   font-size: 1.25rem;
+  font-weight: 400;
+}
+.inter-medium {
+  font-family: "Inter Regular";
+  font-size: 1.125rem;
   font-weight: 400;
 }
 .inter-small {
@@ -44,25 +54,14 @@
   font-size: 1.25rem;
   font-weight: 400;
 }
+.nunito-medium {
+  font-family: "Nunito Regular";
+  font-size: 1.125rem;
+  font-weight: 400;
+}
 .nunito-small {
   font-family: "Nunito Regular";
   font-size: 0.825rem;
-}
-@keyframes emboss {
-  from {
-    box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
-  }
-  to {
-    box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
-  }
-}
-@keyframes deboss {
-  from {
-    box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
-  }
-  to {
-    box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
-  }
 }
 * {
   color: #000;
@@ -77,6 +76,9 @@ html {
 img {
   width: 100%;
 }
+.container {
+  width: 72%;
+}
 .pop-pink {
   color: #FF675F;
 }
@@ -85,10 +87,8 @@ img {
 }
 .accent-background {
   background-color: #e5e5e5;
-}
-.background-fix {
-  height: 100%;
-  width: 130%;
+  height: 100vh;
+  width: 100vw;
   margin-left: calc(-50vw + 25%);
   padding-left: 16rem;
   position: absolute;
@@ -98,34 +98,36 @@ img {
   min-height: 100vh;
 }
 .padded-bottom {
-  padding-bottom: 8.5rem;
+  padding-bottom: 10%;
 }
 .tile {
   font-family: "Inter Regular";
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   display: inline-block;
   padding: 0.5rem;
   margin-block-start: 0.5rem;
   margin-block-end: 0.5rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
-  border-radius: 0.25rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.125rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
-.section div:first-child {
-  margin-top: 5rem;
+.shadowed {
+  padding: 0.5rem;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.125rem;
+}
+.section-icon.odd-icon {
+  max-width: initial;
+  width: auto;
 }
 #about-me h1.pop-pink {
-  margin-block-start: 10%;
   margin-block-end: 5px;
 }
 #about-me h1.pop-pink + h1 {
   margin-block-start: 0px;
   margin-block-end: 28px;
-}
-#about-me > .col-12 {
-  margin-top: 0;
 }
 #face-box #face {
   display: block;
@@ -139,15 +141,31 @@ img {
 #face-box:hover #about-face {
   display: block;
 }
-.section-icon {
-  max-width: 3.125rem;
-  height: 2.125rem;
+.section .section-start {
+  margin-block-start: 4%;
+}
+.section .odd-start {
+  margin-block-start: 2%;
+}
+.section .section-icon {
+  max-width: 2.125rem;
+  max-height: 2.125rem;
 }
 #skills h3 {
-  margin-block-start: 6rem;
+  margin-block-end: 2rem;
 }
 #skills h4 {
   margin-block-start: 0.825rem;
+}
+#skills .skills-start {
+  margin-block-start: 2%;
+  margin-block-end: 2%;
+}
+#skills .language-icon {
+  max-width: none;
+}
+#skills .tile {
+  background: #fff;
 }
 #latest-projects .project .project-description h1 {
   margin-block-end: 0;
@@ -155,6 +173,9 @@ img {
 #latest-projects .project .project-description p {
   margin-block-start: 0;
   margin-block-end: 6px;
+}
+#latest-projects .project .project-highlight {
+  margin-top: 10.5rem;
 }
 #latest-projects .project .project-highlight h3 {
   margin-block-start: 12px;
@@ -168,6 +189,12 @@ img {
   padding-bottom: 7rem;
   top: 5rem;
 }
+#latest-projects .project .image-group .project-image {
+  width: 66%;
+}
+#latest-projects .project .hero-image-container {
+  margin-top: 5.5rem;
+}
 #latest-projects .project .offset-image {
   position: absolute;
   height: auto;
@@ -177,23 +204,61 @@ img {
   right: 3.5rem;
 }
 #latest-projects .project .offset-right {
-  top: 3.5rem;
-  left: 3.5rem;
+  top: 6rem;
+  left: 7rem;
 }
-#experience {
+#experience,
+#education {
   height: 100vh;
 }
-#experience p {
-  margin-block-start: 3.5rem;
+#experience h3,
+#education h3 {
+  margin-block-end: 1.5%;
 }
-#experience h3 {
-  margin-block-start: 6rem;
+#experience h4,
+#education h4 {
+  margin-block-start: 1rem;
+  padding: 0.25rem 0.625rem;
 }
-#experience h4 {
-  margin-block-start: 0.825rem;
+#experience p,
+#education p {
+  line-height: 30px;
 }
-#contact h2 {
-  margin-block-start: 6rem;
+#experience .shadowed,
+#education .shadowed {
+  width: max-content;
+}
+#experience .subtitle {
+  color: #FF675F;
+}
+#contact .contact-icon {
+  max-width: 3.125rem;
+  height: 2.125rem;
+  margin-right: 1.625rem;
+}
+#contact .contact-method img {
+  height: 100%;
+  position: relative;
+  top: 0.625rem;
+}
+#contact .contact-method a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 1.625rem;
+}
+#contact .contact-method a h3 {
+  margin-top: 0.06rem;
+  margin-bottom: 0.125rem;
+  color: #000;
+}
+#contact .contact-method a:hover {
+  text-decoration: none;
+}
+#contact .contact-method a:hover h3 {
+  color: #FF675F;
+}
+#contact .contact-method a:hover img {
+  fill: #FF675F;
 }
 #navigation {
   position: fixed;
@@ -201,21 +266,19 @@ img {
   transform: translateY(-50%);
   left: 2%;
   padding: 2rem 1.5rem;
-  border-radius: 0.25rem;
-  background: #e5e5e5;
-  box-shadow: inset 0.5rem 0.5rem 0.5rem #6c6c6c, inset -0.5rem -0.5rem 0.5rem #d8d8d8;
+  border-radius: 0.125rem;
 }
 #navigation a {
   font-family: "Castoro Regular";
-  font-size: 1.25rem;
-  font-weight: 400;
   display: block;
   text-decoration: none;
-  padding: 0.5rem 0.5rem;
-  margin: 0.5rem;
-  border-radius: 0.25rem;
-  box-shadow: 0.25rem 0.25rem 0.25rem rgba(108, 108, 108, 0), -0.25rem -0.25rem 0.25rem rgba(255, 255, 255, 0);
+  margin-block-end: -0.125rem;
+  border-radius: 0.125rem;
+  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
 }
 #navigation .active-nav {
-  box-shadow: 0.25rem 0.25rem 0.25rem #6c6c6c, -0.25rem -0.25rem 0.25rem #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
