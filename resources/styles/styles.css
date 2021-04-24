@@ -87,7 +87,8 @@ img {
 }
 .accent-background {
   background-color: #e5e5e5;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   margin-left: calc(-50vw + 25%);
   padding-left: 16rem;
@@ -96,9 +97,7 @@ img {
 }
 .full-view {
   min-height: 100vh;
-}
-.padded-bottom {
-  padding-bottom: 10%;
+  height: 100%;
 }
 .tile {
   font-family: "Inter Regular";
@@ -145,7 +144,7 @@ img {
   margin-block-start: 4%;
 }
 .section .odd-start {
-  margin-block-start: 2%;
+  margin-block-start: 4%;
 }
 .section .section-icon {
   max-width: 2.125rem;
@@ -155,7 +154,8 @@ img {
   margin-block-end: 2rem;
 }
 #skills h4 {
-  margin-block-start: 0.825rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.825rem;
 }
 #skills .skills-start {
   margin-block-start: 2%;
@@ -163,6 +163,9 @@ img {
 }
 #skills .language-icon {
   max-width: none;
+}
+#skills .tile-group {
+  margin-bottom: 2rem;
 }
 #skills .tile {
   background: #fff;
@@ -175,7 +178,8 @@ img {
   margin-block-end: 6px;
 }
 #latest-projects .project .project-highlight {
-  margin-top: 10.5rem;
+  margin-top: 6rem;
+  float: right;
 }
 #latest-projects .project .project-highlight h3 {
   margin-block-start: 12px;
@@ -187,7 +191,7 @@ img {
 #latest-projects .project .image-group {
   position: relative;
   padding-bottom: 7rem;
-  top: 5rem;
+  top: 3rem;
 }
 #latest-projects .project .image-group .project-image {
   width: 66%;
@@ -207,17 +211,13 @@ img {
   top: 6rem;
   left: 7rem;
 }
-#experience,
-#education {
-  height: 100vh;
-}
 #experience h3,
 #education h3 {
   margin-block-end: 1.5%;
 }
 #experience h4,
 #education h4 {
-  margin-block-start: 1rem;
+  margin-block-start: 0.5rem;
   padding: 0.25rem 0.625rem;
 }
 #experience p,
@@ -226,10 +226,13 @@ img {
 }
 #experience .shadowed,
 #education .shadowed {
-  width: max-content;
+  max-width: max-content;
 }
 #experience .subtitle {
   color: #FF675F;
+}
+#education div:nth-child(4).col-4 {
+  margin-bottom: 0;
 }
 #contact .contact-icon {
   max-width: 3.125rem;
@@ -281,4 +284,26 @@ img {
 #navigation .active-nav {
   color: #ffffff;
   background-color: #000000;
+}
+@media only screen and (max-width: 60em) {
+  body {
+    overflow-x: hidden;
+  }
+  #navigation {
+    display: none;
+  }
+  .castoro-large {
+    font-size: 3rem;
+  }
+  .full-view {
+    padding-bottom: 2rem;
+  }
+  #contact {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .row {
+    width: 90%;
+  }
 }

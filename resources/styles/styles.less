@@ -116,7 +116,8 @@ img {
 
 .accent-background {
     background-color: @accent-grey;
-    height:100vh;
+    height:100%;
+    min-height: 100vh;
     width: 100vw;
     margin-left: calc(-50vw + 25%);
     padding-left: 16rem;
@@ -126,10 +127,7 @@ img {
 
 .full-view {
     min-height: 100vh;
-}
-
-.padded-bottom {
-    padding-bottom: 10%
+    height: 100%;
 }
 
 .tile {
@@ -140,8 +138,6 @@ img {
     padding: .5rem;
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
-    // box-shadow:  .25rem .25rem .5rem #6c6c6c,
-    //             -.25rem -.25rem .25rem #ffffff;
         box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
     border-radius: .125rem;
     margin-left: .25rem;
@@ -194,7 +190,7 @@ img {
     }
 
     .odd-start {
-        margin-block-start: 2%;
+        margin-block-start: 4%;
     }
 
     .section-icon {
@@ -207,9 +203,12 @@ img {
     h3 {
         margin-block-end: 2rem;
     }
+
     h4 {
-        margin-block-start: 0.825rem;
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.825rem;
     }
+
     .skills-start {
         margin-block-start: 2%;
         margin-block-end: 2%;
@@ -218,6 +217,11 @@ img {
     .language-icon {
         max-width: none;
     }
+
+    .tile-group {
+        margin-bottom: 2rem;
+    }
+
     .tile {
         background: @main-white;
     }
@@ -237,7 +241,8 @@ img {
         }
 
         .project-highlight {
-            margin-top: 10.5rem;
+            margin-top: 6rem;
+            float: right;
 
             h3 {
                 margin-block-start: 12px;
@@ -255,7 +260,7 @@ img {
 
             position: relative;
             padding-bottom: 7rem;
-            top: 5rem;
+            top: 3rem;
         }
 
         .hero-image-container {
@@ -280,20 +285,21 @@ img {
 }
 
 #experience, #education {
-    height: 100vh;
-
     h3 {
         margin-block-end: 1.5%;
     }
+
     h4 {
-        margin-block-start: 1rem;
+        margin-block-start: .5rem;
         padding: 0.25rem 0.625rem;
     }
+
     p {
         line-height: 30px;
     }
+
     .shadowed {
-        width: max-content;
+        max-width: max-content;
     }
 }
 
@@ -305,9 +311,14 @@ img {
 
 // EDUCATION
 
+#education div:nth-child(4).col-4 {
+    margin-bottom: 0;
+}
+
 // CONTACT
 
 #contact {
+
     .contact-icon {
         max-width: 3.125rem;
         height: 2.125rem;
@@ -371,5 +382,33 @@ img {
     .active-nav {
         color: rgba(255,255,255,1);
         background-color: rgba(0,0,0,1);
+    }
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    .castoro-large {
+        font-size: 3rem;
+    }
+
+    .full-view {
+        padding-bottom: 2rem;
+    }
+    
+    #contact {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .row {
+        width: 90%;
     }
 }
