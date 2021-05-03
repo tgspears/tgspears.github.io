@@ -20,6 +20,42 @@
     src: url("../Nunito/NunitoSans-Regular.ttf");
 }
 
+@mobile-start: -15rem;
+@mobile-shown: 0rem;
+
+// SLIDE OUT
+@-webkit-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-moz-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-ms-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-o-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+// SLIDE IN
+@-webkit-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-moz-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-ms-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-o-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+
 .castoro-regular {
     font-family: "Castoro Regular";
     font-size: 1.5rem;
@@ -383,6 +419,10 @@ img {
         color: rgba(255,255,255,1);
         background-color: rgba(0,0,0,1);
     }
+    
+    #nav-burger {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 60em) {
@@ -391,8 +431,40 @@ img {
     }
 
     #navigation {
-        display: none;
+        top: 0rem;
+        padding-top: 4rem;
+        left: -15rem;
+        transform: initial;
+        background-color: @main-black;
+
+        a {
+            color: @pop-pink;
+        }
+
+        &.hidden-mobile-nav {
+            animation-name: slide-in;
+            animation-duration: 0.2s;
+            left: -15rem;
+        }
+
+        &.shown-mobile-nav {
+            animation-name: slide-out;
+            animation-duration: 0.2s;
+            left: 0rem;
+        }
+
+        a {
+            color: @main-white;
+        }
+        
+        #nav-burger {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+        }
     }
+
 
     .castoro-large {
         font-size: 3rem;
@@ -405,6 +477,20 @@ img {
     #contact {
         padding-bottom: 0;
     }
+
+    // Mobile hamburger overrides
+
+    .hamburger--collapse.is-active .hamburger-inner {
+        background-color:white;
+    }
+
+    .hamburger--collapse.is-active .hamburger-inner::after {
+        background-color: white;
+    }
+    .hamburger--collapse.is-active .hamburger-inner::before {
+        background-color:white;
+    }
+
 }
 
 @media only screen and (min-width: 60em) {

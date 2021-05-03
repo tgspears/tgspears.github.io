@@ -1,5 +1,7 @@
 $(document).ready(function(){
+
     $(window).scroll(function() {
+        
         var position = $(this).scrollTop();
 
         $(".section").each(function() {
@@ -12,4 +14,26 @@ $(document).ready(function(){
             };
         });
     });
+
+    $("#navigation #nav-burger").click(function(){
+        
+        $(".hamburger").toggleClass("is-active");
+
+        $("#navigation").click(function(){
+            $("#navigation")
+                .addClass("shown-mobile-nav");
+        })
+
+        $("#navigation.shown-mobile-nav").click(function(){
+            $("#navigation")
+                .addClass("hidden-mobile-nav")
+                .removeClass("shown-mobile-nav");
+        })
+
+        $("#navigation.hidden-mobile-nav").click(function(){
+            $("#navigation")
+                .addClass("shown-mobile-nav")
+                .removeClass("hidden-mobile-nav");
+        })
+    })
 })

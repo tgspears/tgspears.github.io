@@ -14,6 +14,86 @@
   font-family: "Nunito Regular";
   src: url("../Nunito/NunitoSans-Regular.ttf");
 }
+@-webkit-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-moz-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-ms-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-o-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-webkit-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-moz-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-ms-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-o-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
 .castoro-regular {
   font-family: "Castoro Regular";
   font-size: 1.5rem;
@@ -285,12 +365,41 @@ img {
   color: #ffffff;
   background-color: #000000;
 }
+#navigation #nav-burger {
+  display: none;
+}
 @media only screen and (max-width: 60em) {
   body {
     overflow-x: hidden;
   }
   #navigation {
-    display: none;
+    top: 0rem;
+    padding-top: 4rem;
+    left: -15rem;
+    transform: initial;
+    background-color: #000;
+  }
+  #navigation a {
+    color: #FF675F;
+  }
+  #navigation.hidden-mobile-nav {
+    animation-name: slide-in;
+    animation-duration: 0.2s;
+    left: -15rem;
+  }
+  #navigation.shown-mobile-nav {
+    animation-name: slide-out;
+    animation-duration: 0.2s;
+    left: 0rem;
+  }
+  #navigation a {
+    color: #fff;
+  }
+  #navigation #nav-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
   }
   .castoro-large {
     font-size: 3rem;
@@ -300,6 +409,15 @@ img {
   }
   #contact {
     padding-bottom: 0;
+  }
+  .hamburger--collapse.is-active .hamburger-inner {
+    background-color: white;
+  }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    background-color: white;
+  }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    background-color: white;
   }
 }
 @media only screen and (min-width: 60em) {
