@@ -138,6 +138,11 @@ img {
     width: 100%;
 }
 
+h4 {
+    margin: 0;
+    min-height: 3rem;
+}
+
 .container {
     width: 72%;
 }
@@ -174,7 +179,7 @@ img {
     padding: .5rem;
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
-        box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
     border-radius: .125rem;
     margin-left: .25rem;
     margin-right: .25rem;
@@ -200,6 +205,10 @@ img {
         margin-block-start: 0px;
         margin-block-end: 28px;
     }
+
+    h3 {
+        margin-top: 0;
+    }
 }
 
 #face-box {
@@ -223,10 +232,10 @@ img {
 .section {
     .section-start {
         margin-block-start: 4%;
-    }
 
-    .odd-start {
-        margin-block-start: 4%;
+        h1 {
+            margin-top: 4rem;
+        }
     }
 
     .section-icon {
@@ -236,22 +245,18 @@ img {
 }
 
 #skills {
-    h3 {
-        margin-block-end: 2rem;
-    }
 
     h4 {
         margin-block-start: 0.5rem;
         margin-block-end: 0.825rem;
     }
 
-    .skills-start {
-        margin-block-start: 2%;
-        margin-block-end: 2%;
-    }
-
     .language-icon {
         max-width: none;
+    }
+
+    .skill-section {
+        margin-left: -.125rem;
     }
 
     .tile-group {
@@ -277,12 +282,12 @@ img {
         }
 
         .project-highlight {
-            margin-top: 6rem;
+            margin-top: 3rem;
             float: right;
 
             h3 {
-                margin-block-start: 12px;
-                margin-block-end: 12px;
+                margin-block-start: -.125rem;
+                // margin-block-end: 12px;
             }
             p {
                 margin-block-end: 14px;
@@ -291,16 +296,16 @@ img {
 
         .image-group {
             .project-image {
-                width: 66%;
+                width: 75%;
             }
 
             position: relative;
             padding-bottom: 7rem;
-            top: 3rem;
+            top: 6rem;
         }
 
         .hero-image-container {
-            margin-top: 5.5rem;
+            margin-top: 3rem;
         }
 
         .offset-image {
@@ -318,16 +323,19 @@ img {
             left: 7rem;
         }
     }
+
+    #paramount {
+        .section-start {
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    }
 }
 
 #experience, #education {
     h3 {
         margin-block-end: 1.5%;
-    }
-
-    h4 {
-        margin-block-start: .5rem;
-        padding: 0.25rem 0.625rem;
     }
 
     p {
@@ -336,6 +344,7 @@ img {
 
     .shadowed {
         max-width: max-content;
+        background-color: @main-white;
     }
 }
 
@@ -351,6 +360,10 @@ img {
     margin-bottom: 0;
 }
 
+.school {
+    height: 5rem;
+}
+
 // CONTACT
 
 #contact {
@@ -362,10 +375,17 @@ img {
     }
 
     .contact-method {
+
+        margin: 0;
+
         img {
             height: 100%;
             position: relative;
             top: 0.625rem;
+        }
+
+        .short-icon {
+            top: 0.5rem;
         }
 
         a {
@@ -477,20 +497,46 @@ img {
     #contact {
         padding-bottom: 0;
     }
+}
 
-    // Mobile hamburger overrides
 
-    .hamburger--collapse.is-active .hamburger-inner {
-        background-color:white;
+
+// HAMBURGER OVERRIDES
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 26px;
+}
+
+.hamburger--collapse .hamburger-inner::before {
+    top: -7px;
+}
+
+.hamburger--collapse .hamburger-inner::after {
+    top: -14px;
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+    background-color:white;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+    background-color: white;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+    background-color:white;
+}
+
+@media only screen and (max-width: 45rem) {
+    #latest-projects {
+        .project {
+            .image-group {
+                top: 1rem;
+            }
+        }
     }
-
-    .hamburger--collapse.is-active .hamburger-inner::after {
-        background-color: white;
-    }
-    .hamburger--collapse.is-active .hamburger-inner::before {
-        background-color:white;
-    }
-
 }
 
 @media only screen and (min-width: 60em) {

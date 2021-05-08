@@ -156,6 +156,10 @@ html {
 img {
   width: 100%;
 }
+h4 {
+  margin: 0;
+  min-height: 3rem;
+}
 .container {
   width: 72%;
 }
@@ -208,6 +212,9 @@ img {
   margin-block-start: 0px;
   margin-block-end: 28px;
 }
+#about-me h3 {
+  margin-top: 0;
+}
 #face-box #face {
   display: block;
 }
@@ -223,26 +230,22 @@ img {
 .section .section-start {
   margin-block-start: 4%;
 }
-.section .odd-start {
-  margin-block-start: 4%;
+.section .section-start h1 {
+  margin-top: 4rem;
 }
 .section .section-icon {
   max-width: 2.125rem;
   max-height: 2.125rem;
 }
-#skills h3 {
-  margin-block-end: 2rem;
-}
 #skills h4 {
   margin-block-start: 0.5rem;
   margin-block-end: 0.825rem;
 }
-#skills .skills-start {
-  margin-block-start: 2%;
-  margin-block-end: 2%;
-}
 #skills .language-icon {
   max-width: none;
+}
+#skills .skill-section {
+  margin-left: -0.125rem;
 }
 #skills .tile-group {
   margin-bottom: 2rem;
@@ -258,12 +261,11 @@ img {
   margin-block-end: 6px;
 }
 #latest-projects .project .project-highlight {
-  margin-top: 6rem;
+  margin-top: 3rem;
   float: right;
 }
 #latest-projects .project .project-highlight h3 {
-  margin-block-start: 12px;
-  margin-block-end: 12px;
+  margin-block-start: -0.125rem;
 }
 #latest-projects .project .project-highlight p {
   margin-block-end: 14px;
@@ -271,13 +273,13 @@ img {
 #latest-projects .project .image-group {
   position: relative;
   padding-bottom: 7rem;
-  top: 3rem;
+  top: 6rem;
 }
 #latest-projects .project .image-group .project-image {
-  width: 66%;
+  width: 75%;
 }
 #latest-projects .project .hero-image-container {
-  margin-top: 5.5rem;
+  margin-top: 3rem;
 }
 #latest-projects .project .offset-image {
   position: absolute;
@@ -291,14 +293,12 @@ img {
   top: 6rem;
   left: 7rem;
 }
+#latest-projects #paramount .section-start h1 {
+  font-size: 3.5rem;
+}
 #experience h3,
 #education h3 {
   margin-block-end: 1.5%;
-}
-#experience h4,
-#education h4 {
-  margin-block-start: 0.5rem;
-  padding: 0.25rem 0.625rem;
 }
 #experience p,
 #education p {
@@ -307,6 +307,7 @@ img {
 #experience .shadowed,
 #education .shadowed {
   max-width: max-content;
+  background-color: #fff;
 }
 #experience .subtitle {
   color: #FF675F;
@@ -314,15 +315,24 @@ img {
 #education div:nth-child(4).col-4 {
   margin-bottom: 0;
 }
+.school {
+  height: 5rem;
+}
 #contact .contact-icon {
   max-width: 3.125rem;
   height: 2.125rem;
   margin-right: 1.625rem;
 }
+#contact .contact-method {
+  margin: 0;
+}
 #contact .contact-method img {
   height: 100%;
   position: relative;
   top: 0.625rem;
+}
+#contact .contact-method .short-icon {
+  top: 0.5rem;
 }
 #contact .contact-method a {
   display: inline-block;
@@ -410,14 +420,30 @@ img {
   #contact {
     padding-bottom: 0;
   }
-  .hamburger--collapse.is-active .hamburger-inner {
-    background-color: white;
-  }
-  .hamburger--collapse.is-active .hamburger-inner::after {
-    background-color: white;
-  }
-  .hamburger--collapse.is-active .hamburger-inner::before {
-    background-color: white;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 26px;
+}
+.hamburger--collapse .hamburger-inner::before {
+  top: -7px;
+}
+.hamburger--collapse .hamburger-inner::after {
+  top: -14px;
+}
+.hamburger--collapse.is-active .hamburger-inner {
+  background-color: white;
+}
+.hamburger--collapse.is-active .hamburger-inner::after {
+  background-color: white;
+}
+.hamburger--collapse.is-active .hamburger-inner::before {
+  background-color: white;
+}
+@media only screen and (max-width: 45rem) {
+  #latest-projects .project .image-group {
+    top: 1rem;
   }
 }
 @media only screen and (min-width: 60em) {
