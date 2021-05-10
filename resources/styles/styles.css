@@ -302,10 +302,6 @@ h4 {
 #education h3 {
   margin-block-end: 1.5%;
 }
-#experience p,
-#education p {
-  line-height: 30px;
-}
 #experience .shadowed,
 #education .shadowed {
   max-width: max-content;
