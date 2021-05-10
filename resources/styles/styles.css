@@ -14,6 +14,86 @@
   font-family: "Nunito Regular";
   src: url("../Nunito/NunitoSans-Regular.ttf");
 }
+@-webkit-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-moz-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-ms-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-o-keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: -15rem;
+  }
+  to {
+    left: 0rem;
+  }
+}
+@-webkit-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-moz-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-ms-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@-o-keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
+@keyframes slide-in {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -15rem;
+  }
+}
 .castoro-regular {
   font-family: "Castoro Regular";
   font-size: 1.5rem;
@@ -76,6 +156,9 @@ html {
 img {
   width: 100%;
 }
+h4 {
+  margin: 0;
+}
 .container {
   width: 72%;
 }
@@ -87,8 +170,9 @@ img {
 }
 .accent-background {
   background-color: #e5e5e5;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  width: 200vw;
   margin-left: calc(-50vw + 25%);
   padding-left: 16rem;
   position: absolute;
@@ -96,9 +180,7 @@ img {
 }
 .full-view {
   min-height: 100vh;
-}
-.padded-bottom {
-  padding-bottom: 10%;
+  height: 100%;
 }
 .tile {
   font-family: "Inter Regular";
@@ -129,6 +211,9 @@ img {
   margin-block-start: 0px;
   margin-block-end: 28px;
 }
+#about-me h3 {
+  margin-top: 0;
+}
 #face-box #face {
   display: block;
 }
@@ -144,28 +229,31 @@ img {
 .section .section-start {
   margin-block-start: 4%;
 }
-.section .odd-start {
-  margin-block-start: 2%;
+.section .section-start h1 {
+  margin-top: 4rem;
 }
 .section .section-icon {
   max-width: 2.125rem;
   max-height: 2.125rem;
 }
-#skills h3 {
-  margin-block-end: 2rem;
-}
 #skills h4 {
-  margin-block-start: 0.825rem;
-}
-#skills .skills-start {
-  margin-block-start: 2%;
-  margin-block-end: 2%;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.825rem;
 }
 #skills .language-icon {
   max-width: none;
 }
+#skills .skill-section {
+  margin-left: -0.125rem;
+}
+#skills .tile-group {
+  margin-bottom: 2rem;
+}
 #skills .tile {
   background: #fff;
+}
+#skills .shadow-box {
+  margin-bottom: 1rem;
 }
 #latest-projects .project .project-description h1 {
   margin-block-end: 0;
@@ -175,11 +263,11 @@ img {
   margin-block-end: 6px;
 }
 #latest-projects .project .project-highlight {
-  margin-top: 10.5rem;
+  margin-top: 3rem;
+  float: right;
 }
 #latest-projects .project .project-highlight h3 {
-  margin-block-start: 12px;
-  margin-block-end: 12px;
+  margin-block-start: -0.125rem;
 }
 #latest-projects .project .project-highlight p {
   margin-block-end: 14px;
@@ -187,13 +275,13 @@ img {
 #latest-projects .project .image-group {
   position: relative;
   padding-bottom: 7rem;
-  top: 5rem;
+  top: 6rem;
 }
 #latest-projects .project .image-group .project-image {
-  width: 66%;
+  width: 75%;
 }
 #latest-projects .project .hero-image-container {
-  margin-top: 5.5rem;
+  margin-top: 3rem;
 }
 #latest-projects .project .offset-image {
   position: absolute;
@@ -207,18 +295,17 @@ img {
   top: 6rem;
   left: 7rem;
 }
-#experience,
-#education {
-  height: 100vh;
+#latest-projects #paramount .section-start h1 {
+  font-size: 3.5rem;
+}
+#experience div,
+#education div {
+  background: #fff;
+  margin-bottom: 1rem;
 }
 #experience h3,
 #education h3 {
   margin-block-end: 1.5%;
-}
-#experience h4,
-#education h4 {
-  margin-block-start: 1rem;
-  padding: 0.25rem 0.625rem;
 }
 #experience p,
 #education p {
@@ -226,20 +313,44 @@ img {
 }
 #experience .shadowed,
 #education .shadowed {
-  width: max-content;
+  max-width: max-content;
+  background-color: #fff;
 }
 #experience .subtitle {
   color: #FF675F;
+}
+#experience .shadow-box {
+  margin-bottom: 1rem;
+}
+#education div:nth-child(4).col-4 {
+  margin-bottom: 0;
+}
+.school {
+  height: 5rem;
 }
 #contact .contact-icon {
   max-width: 3.125rem;
   height: 2.125rem;
   margin-right: 1.625rem;
 }
+#contact .contact-method {
+  padding-left: 0.25rem;
+}
+#contact .contact-method #email-icon {
+  margin-left: -0.125rem;
+  margin-right: 0.125rem;
+}
+#contact .contact-method #linkedin-icon {
+  margin-left: -0.375rem;
+  margin-right: 0.375rem;
+}
 #contact .contact-method img {
   height: 100%;
   position: relative;
   top: 0.625rem;
+}
+#contact .contact-method .short-icon {
+  top: 0.5rem;
 }
 #contact .contact-method a {
   display: inline-block;
@@ -281,4 +392,83 @@ img {
 #navigation .active-nav {
   color: #ffffff;
   background-color: #000000;
+}
+#navigation #nav-burger {
+  display: none;
+}
+@media only screen and (max-width: 60em) {
+  body {
+    overflow-x: hidden;
+  }
+  #navigation {
+    top: 0rem;
+    padding-top: 4rem;
+    left: -15rem;
+    transform: initial;
+    background-color: #000;
+  }
+  #navigation a {
+    color: #FF675F;
+  }
+  #navigation.hidden-mobile-nav {
+    animation-name: slide-in;
+    animation-duration: 0.2s;
+    left: -15rem;
+  }
+  #navigation.shown-mobile-nav {
+    animation-name: slide-out;
+    animation-duration: 0.2s;
+    left: 0rem;
+  }
+  #navigation a {
+    color: #fff;
+  }
+  #navigation #nav-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .castoro-large {
+    font-size: 3rem;
+  }
+  .full-view {
+    padding-bottom: 2rem;
+  }
+  #contact {
+    padding-bottom: 0;
+  }
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 26px;
+}
+.hamburger--collapse .hamburger-inner::before {
+  top: -7px;
+}
+.hamburger--collapse .hamburger-inner::after {
+  top: -14px;
+}
+.hamburger--collapse.is-active .hamburger-inner {
+  background-color: white;
+}
+.hamburger--collapse.is-active .hamburger-inner::after {
+  background-color: white;
+}
+.hamburger--collapse.is-active .hamburger-inner::before {
+  background-color: white;
+}
+@media only screen and (max-width: 45rem) {
+  #latest-projects .project .image-group {
+    top: 1rem;
+  }
+  #latest-projects .project .hero-image-container {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .row {
+    width: 90%;
+  }
 }

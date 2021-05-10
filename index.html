@@ -6,9 +6,9 @@
         <title>Trevor Spears</title>
         <meta name="description" content="The portfolio page for Trevor Spears (That's me!)">
         <link rel="stylesheet" href="resources/styles/simple-grid.css">
+        <link rel="stylesheet" href="resources/styles/hamburgers.css">
         <link rel="stylesheet" href="resources/styles/styles.css">
-        <script type = "text/javascript" src = "js/jquery-3.6.0.slim.min.js"></script>
-        <script type = "text/javascript" src = "js/index.js"></script>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
     </head>
     <body>
         <div class="container">
@@ -16,7 +16,7 @@
             <div id="about-me" class="row section full-view">
                 <div class="col-12 section-start">
                     <h1 class="pop-pink castoro-large">Hello</h1>
-                    <h1 class="castoro-large">I'm Trevor Spears</h1>
+                    <h3 class="castoro-large">I'm Trevor Spears</h3>
                 </div>
                 <div id="face-box" class="col-3">
                     <img id="face" src="resources/images/trevorSpears.jpg">
@@ -24,116 +24,115 @@
                 </div>
                 <div class="col-9">
                     <p class="no-margin-top nunito-regular">
-                        I am a Front End Web Developer hungry to learn as much as possible to build my skills and grow my career. I am passionate about creating products that are intuitive and rewarding to use.
+                        I am a Front End Web Developer with QA experience that is hungry to learn as much as possible to build my skills and grow professionally. I am passionate about creating products that are intuitive and rewarding to use.
                     </p>
                     <p class="nunito-regular">
-                        In my spare time I am an avid video gamer, speedrunner of Mario Odyssey, and table-top gamer with a soft spot for Magic: the Gathering.
+                        In my spare time, I am an avid video and table-top gamer with a soft spot for Magic: The Gathering. Most recently, I have been learning more about Chess strategies and striving for my best time while speed-running Mario Odyssey.
                     </p>
                 </div>
             </div>
         <!-- SKILLS -->
-            <div id="skills" class="row section inter-bold full-view">
-                <div class="col-12 odd-start">
-                    <h3 class="castoro-large">Skills</h3>
+            <div id="skills" class="row section full-view">
+                <div class="col-12 section-start">
+                    <h1 class="castoro-large">Skills</h1>
                 </div>
-                <div class="col-4">
+                <div class="col-4 tile-group">
                     <img class="section-icon odd-icon language-icon" src="resources/images/icons/iconLanguage.svg">
-                    <h4 class="inter-regular">Languages/Frameworks</h4>
+                    <div class="shadow-box">
+                        <h4 class="inter-regular">Languages / Frameworks</h4>
+                    </div>
                     <div class="skill-section">
                         <li class="tile">Javascript</li>
                         <li class="tile">REST APIs</li>
-                        <li class="tile">PostgreSQL</li>
                         <li class="tile">HTML5</li>
-                        <li class="tile">CSS3</li>
-                        <li class="tile">Ruby</li>
+                        <li class="tile">CSS3 / LESS / SASS</li>
                         <li class="tile">JSON</li>
+                        <li class="tile">Angular</li>
+                        <li class="tile">JQuery</li>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 tile-group">
                     <img class="section-icon" src="resources/images/icons/iconTools.svg">
-                    <h4 class="inter-regular">Tools</h4>
+                    <div class="shadow-box">
+                        <h4 class="inter-regular">Tools / Libraries</h4>
+                    </div>
                     <div class="skill-section">
-                        <li class="tile">JQuery</li>
-                        <li class="tile">Node</li>
-                        <li class="tile">Angular</li>
+                        <li class="tile">NPM</li>
                         <li class="tile">Nightwatch</li>
                         <li class="tile">Bootstrap</li>
                         <li class="tile">Material</li>
-                        <li class="tile">NPM</li>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <img class="section-icon" src="resources/images/icons/iconBriefcase.svg">
-                    <h4 class="inter-regular">Professional</h4>
-                    <div>
                         <li class="tile">Git / Github</li>
                         <li class="tile">Heroku</li>
-                        <li class="tile">Screaming Frog</li>
-                        <li class="tile">Refinery CMS</li>
-                        <li class="tile">Blazemeter</li>
-                        <li class="tile">Excel / Sheets</li>
                     </div>
                 </div>
-                <!-- <div class="col-4">
+                <div class="col-4 tile-group">
                     <img class="section-icon" src="resources/images/icons/iconBriefcase.svg">
-                    <h4 class="inter-regular">Front end</h4>
-                    <div>
-                        <li class="tile">CSS3</li>
-                        <li class="tile">LESS</li>
-                        <li class="tile">Bootstrap</li>
-                        <li class="tile">Material</li>
+                    <div class="shadow-box">
+                        <h4 class="inter-regular">Professional</h4>
                     </div>
-                </div> -->
+                    <div class="skill-section">
+                        <li class="tile">Quality Assurance (QA)</li>
+                        <li class="tile">Excel / Sheets</li>
+                        <li class="tile">Microsoft Office</li>
+                        <li class="tile">Team Player</li>
+                    </div>
+                </div>
                 <div class="accent-background background-fix"></div>
             </div>
         <!-- LATEST PROJECTS -->
             <div id="latest-projects" class="row section inter-bold">
             <!-- MERCUTIO -->
-                <div id="mercutio" class="row project full-view padded-bottom">
+                <div id="mercutio" class="row project full-view ">
                     <div class="col-6 project-description section-start">
                         <h1 class="castoro-large pop-pink">Mercutio</h1>
-                        <p class="nunito-regular">tldr: I worked with a bunch of cool companies and made the best testing framework that caught every bug known to mankind.</p>
+                        <h3 class="castoro-regular pop-pink">TL;DR</h3>
+                        <p class="nunito-regular">I worked for a consulting shop that built and maintained websites/apps for outdoor and recreational retail companies. My primary focus was in testing, QA, front-end troubleshooting, and some DevOps.</p>
                     </div>
                     <div class="col-6 image-group">
                         <img class="project-image" src="resources/images/mercutio/blazeMeter.png">
                         <img class="project-image offset-image offset-right" src="resources/images/mercutio/sealLine.png">
                     </div>
+                    <div class="col-12"></div>
+                    <div class="col-6 project-highlight">
+                        <h3 class="castoro-regular pop-pink">Highlight: Home-grown QA Testing Framework</h3>
+                        <p class="nunito-regular">I designed and created a front-end testing framework from scratch, which was eventually productized and sold as a stand-alone offering to customers. It’s main focus was analysis of the DOM and simulation of hundreds of user actions for Quality Assurance, functionality testing, and stress-testing at scale.</p>
+                    </div>
                     <div class="col-6 hero-image-container">
                         <img src="resources/images/mercutio/nightwatchJS.png">
                     </div>
-                    <div class="col-6 project-highlight">
-                        <h3 class="castoro-regular pop-pink">Highlight: QA Testing Framework</h3>
-                        <p class="nunito-regular">I designed and created a front-end testing product from scratch. This framework analyzed the DOM and could simulate hundreds of [times people came to the site, did stuff, then checked out]. The framework was a unique product in that landscape and was sold as an additional service.</p>
-                    </div>
                 </div>
             <!-- PARAMOUNT -->
-                <div id="paramount" class="row project full-view">
+                <div id="paramount" class="row project full-view ">
                     <div class="col-6 project-description section-start">
                         <h1 class="pop-pink castoro-large">Paramount</h1>
-                        <p class="nunito-regular">tldr: I created the corporate website from scratch, worked with business stakeholders and integrated with a CMS (Refinery).</p>
+                        <h3 class="castoro-regular">TL;DR</h3>
+                        <p class="nunito-regular">I partnered with another developer to create the PLGIC corporate website from scratch, working with business stakeholders and integrating a CMS (Refinery) across the site.</p>
                     </div>
                     <div class="col-6 image-group">
                         <img class="project-image" src="resources/images/paramount/paramountHome.png">
                         <img class="project-image offset-image offset-right" src="resources/images/paramount/paramountProducts.png">
                     </div>
-                    <div class="col-6 hero-image-container">
-                        <img class="highlight-image" src="resources/images/gifs/paramountHistoryScroll.gif">
-                    </div>
+                    <div class="col-12"></div>
                     <div class="col-6 project-highlight">
-                        <h3 class="castoro-regular">Highlight: UI</h3>
-                        <p class="nunito-regular">Using the latest cutting edge CSS3 frameworks of the time I created an interactive historical experience that immerses viewers into the 70 year history of Paramount.</p>
+                        <h3 class="castoro-regular">Highlight: Vertical Timeline UX</h3>
+                        <p class="nunito-regular">Using the latest CSS3 frameworks at the time, I built an interactive vertical timeline covering key milestones throughout the 70 year history of the company.</p>
+                    </div>
+                    <div class="col-6 hero-image-container">
+                        <img src="resources/images/gifs/paramountHistoryScroll.gif">
                     </div>
                     <div class="accent-background background-fix"></div>
                 </div>
             </div>
         <!-- EXPERIENCE -->
-            <div id="experience" class="row section inter-bold full-view">
+            <div id="experience" class="row section full-view">
                 <div class="col-12 section-start">
                     <h1 class="castoro-large">Experience</h1>
                 </div>
                 <div class="col-4">
                     <img class="section-icon" src="resources/images/icons/iconLaptop.svg">
-                    <h4 class="shadowed inter-medium">Mercutio Consulting</h4>
+                    <div class="shadow-box">
+                        <h4 class="shadowed inter-medium">Mercutio Consulting</h4>
+                    </div>
                     <h3 class="subtitle castoro-medium">Software Testing Engineer</h3>
                     <p class="nunito-medium">
                         Designed and implemented software architecture to support automated regression testing across multiple properties. Conducted SEO crawls to support development and identify dead content. Wrote load testing scripts to stress test automated server scaling. Technologies used include Nightwatch JS, Blazemeter, Screaming Frog and Magento.
@@ -141,7 +140,9 @@
                 </div>
                 <div class="col-4">
                     <img class="section-icon" src="resources/images/icons/iconBrackets.svg">
-                    <h4 class="shadowed inter-medium">Freelance: Paramount</h4>
+                    <div class="shadow-box">
+                        <h4 class="shadowed inter-medium">Freelance: Paramount</h4>
+                    </div>
                     <h3 class="subtitle castoro-medium">Full Stack Developer</h3>
                     <p class="nunito-medium">
                         Partnered with one other developer to build a redesigned, mobile responsive website for Paramount Life & General Insurance Corp. 
@@ -149,18 +150,11 @@
                         UI development work includes jQuery and CSS3 animations to enhance interaction design. Technologies also include Ruby on Rails, postgreSQL, SASS and Javascript.
                     </p>
                 </div>
-                <!-- <div class="col-4">
-                    <img class="section-icon" src="resources/images/icons/iconMouse.svg">
-                    <h4 class="shadowed inter-medium">General Assembly</h4>
-                    <h3 class="subtitle castoro-medium">Web Development Immersive Student</h3>
-                    <p class="nunito-medium">
-                        Full-time web development student for an intensive, immersive coding program with complete commitment for 70+ hours a week. Participated in and attended full-day lectures and coding labs. 
-                        Built full-scale apps both individually and in group projects.
-                    </p>
-                </div> -->
                 <div class="col-4">
                     <img class="section-icon" src="resources/images/icons/iconMouse.svg">
-                    <h4 class="shadowed inter-medium">Perfect Image</h4>
+                    <div class="shadow-box">
+                        <h4 class="shadowed inter-medium">Perfect Image</h4>
+                    </div>
                     <h3 class="subtitle castoro-medium">Digital Archiving Associate</h3>
                     <p class="nunito-medium">
                         Responsible for digital archiving of printed and microfiche documents, including extensive indexing. Familiar with AutoScan, Image Capture Plus & Adobe softwares.
@@ -168,45 +162,51 @@
                 </div>
             </div>
         <!-- EDUCATION -->
-            <div id="education" class="row section inter-bold full-view ">
-                <div class="col-12 odd-start">
-                    <h3 class="castoro-large pop-pink">Education</h3>
+            <div id="education" class="row section full-view ">
+                <div class="col-12 section-start">
+                    <h1 class="castoro-large pop-pink">Education</h1>
                 </div>
                 <div class="col-4">
                     <img class="section-icon odd-icon" src="resources/images/icons/iconGAHollow.svg">
-                    <h4 class="shadowed inter-medium">General Assembly</h4>
+                    <div class="shadow-box">
+                        <h4 class="inter-medium shadowed">General Assembly</h4>
+                    </div>
                     <h3 class="subtitle castoro-medium pop-pink">Web Development Immersive (WDI)</h3>
                     <p class="nunito-medium">March 2015 - June 2015</p>
                 </div>
                 <div class="col-4">
                     <img class="section-icon" src="resources/images/icons/iconPaperPencil.svg">
-                    <h4 class="shadowed inter-medium">Seattle Central Community College</h4>
-                    <h3 class="subtitle castoro-medium pop-pink">Associate of Applpied Science Track</h3>
+                    <div class="shadow-box">
+                        <h4 class="inter-medium shadowed">Seattle Central Community College</h4>
+                    </div>
+                    <h3 class="subtitle castoro-medium pop-pink">Associate of Applied Science Track</h3>
                     <p class="nunito-medium">July 2014 - March 2015</p>
                 </div>
                 <div class="col-4">
                     <img class="section-icon" src="resources/images/icons/iconBook.svg">
-                    <h4 class="shadowed inter-medium">Edmonds Community College</h4>
+                    <div class="shadow-box">
+                        <h4 class="inter-medium shadowed">Edmonds Community College</h4>
+                    </div>
                     <h3 class="subtitle castoro-medium pop-pink">Associate of Science Track</h3>
                     <p class="nunito-medium">August 2008 - February 2010</p>
                 </div>
                 <div class="accent-background background-fix"></div>
             </div>
         <!-- CONTACT -->
-            <div id="contact" class="row section inter-bold full-view">
-                <div class="col-12 odd-start">
-                    <h3 class="castoro-large">Contact</h3>
+            <div id="contact" class="row section full-view">
+                <div class="col-12 section-start">
+                    <h1 class="castoro-large">Contact</h1>
                 </div>
                 <div class="col-12 contact-method">
-                    <img class="section-icon" src="resources/images/icons/iconMail.svg">
+                    <img id="email-icon" class="section-icon" src="resources/images/icons/iconMail.svg">
                     <a class="" href=""><h3 class="castoro-medium">Send me an email</h3></a>
                 </div>
                 <div class="col-12 contact-method">
-                    <img class="section-icon" src="resources/images/icons/iconLinkedIn.svg">
-                    <a class="" href=""><h3 class="castoro-medium">Check out my LinkedIn</h3></a>
+                    <img id="linkedin-icon" class="section-icon short-icon" src="resources/images/icons/iconLinkedIn.svg">
+                    <a class="" href=""><h3 class="castoro-medium">See my LinkedIn</h3></a>
                 </div>
                 <div class="col-12 contact-method">
-                    <img class="section-icon" src="resources/images/icons/iconGithub.svg">
+                    <img class="section-icon short-icon" src="resources/images/icons/iconGithub.svg">
                     <a class="" href=""><h3 class="castoro-medium">View my Github</h3></a>
                 </div>
             </div>
@@ -218,8 +218,14 @@
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
+                <button id="nav-burger" class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </div>
     </body>
+    <script type = "text/javascript" src = "js/jquery-3.6.0.slim.min.js"></script>
     <script src="js/index.js"></script>
 </html>
