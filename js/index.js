@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+
+    equalize = function(selector){
+        var maxHeight = 0;
+
+        $(selector).each(function(){
+            if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+        });
+
+        $(selector).height(maxHeight);
+    }
+
+    // Experience Employer
+    equalize("#experience .shadowed");
+    // Experience Title
+    equalize("#experience .subtitle");
+
+    // Education Employer
+    equalize("#education .shadowed");
+    // Education Title
+    equalize("#education .subtitle");
+
+
     $(window).scroll(function() {
         
         var position = $(this).scrollTop();

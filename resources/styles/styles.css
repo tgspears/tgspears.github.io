@@ -158,7 +158,6 @@ img {
 }
 h4 {
   margin: 0;
-  min-height: 3rem;
 }
 .container {
   width: 72%;
@@ -173,7 +172,7 @@ h4 {
   background-color: #e5e5e5;
   height: 100%;
   min-height: 100vh;
-  width: 100vw;
+  width: 200vw;
   margin-left: calc(-50vw + 25%);
   padding-left: 16rem;
   position: absolute;
@@ -324,7 +323,7 @@ h4 {
   margin-right: 1.625rem;
 }
 #contact .contact-method {
-  margin: 0;
+  padding-left: 0.25rem;
 }
 #contact .contact-method img {
   height: 100%;
@@ -444,6 +443,9 @@ h4 {
 @media only screen and (max-width: 45rem) {
   #latest-projects .project .image-group {
     top: 1rem;
+  }
+  #latest-projects .project .hero-image-container {
+    margin-top: 1rem;
   }
 }
 @media only screen and (min-width: 60em) {
