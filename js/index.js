@@ -11,15 +11,16 @@ $(document).ready(function(){
         $(selector).height(maxHeight);
     }
 
-    // Experience Employer
-    equalize("#experience .shadowed");
-    // Experience Title
+    // Experience
+    equalize("#experience .shadow-box");
     equalize("#experience .subtitle");
 
-    // Education Employer
-    equalize("#education .shadowed");
-    // Education Title
+    // Education
+    equalize("#education .shadow-box");
     equalize("#education .subtitle");
+
+    // Skills
+    equalize("#skills .shadow-box");
 
 
     $(window).scroll(function() {
