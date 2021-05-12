@@ -2,10 +2,16 @@ $(document).ready(function(){
 
 
     equalize = function(selector){
+
         var maxHeight = 0;
 
         $(selector).each(function(){
-            if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+
+            $(this).height("auto");
+            
+            if ($(this).innerHeight() > maxHeight) {
+                maxHeight = $(this).innerHeight();
+            }
         });
 
         $(selector).height(maxHeight);
@@ -23,15 +29,31 @@ $(document).ready(function(){
     equalize("#skills .shadow-box");
 
 
+    $(window).on('resize',function(){
+
+        // Experience
+        equalize("#experience .shadow-box");
+        equalize("#experience .subtitle");
+
+        // Education
+        equalize("#education .shadow-box");
+        equalize("#education .subtitle");
+
+        // Skills
+        equalize("#skills .shadow-box");
+    });
+
     $(window).scroll(function() {
         
         var position = $(this).scrollTop();
 
         $(".section").each(function() {
+
             var target = $(this).offset().top - 10;
             var id = $(this).attr('id');
 
             if (position >= target) {
+                
                 $("#navigation > a").removeClass("active-nav");
                 $("#navigation > a[href='#"+id+"']").addClass("active-nav");
             };
