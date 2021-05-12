@@ -290,7 +290,6 @@ h4 {
 
             h3 {
                 margin-block-start: -.125rem;
-                // margin-block-end: 12px;
             }
             p {
                 margin-block-end: 14px;
@@ -327,13 +326,13 @@ h4 {
         }
     }
 
-    #paramount {
-        .section-start {
-            h1 {
-                font-size: 3.5rem;
-            }
-        }
-    }
+    // #paramount {
+    //     .section-start {
+    //         h1 {
+    //             font-size: 3.5rem;
+    //         }
+    //     }
+    // }
 }
 
 #experience, #education {
@@ -459,11 +458,19 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 60em) {
+
+@media only screen and (max-width: 70rem) {
+    #paramount {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 60rem) {
     body {
         overflow-x: hidden;
     }
-
 
     #navigation {
         top: 0rem;
