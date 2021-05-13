@@ -1,0 +1,571 @@
+// Fonts
+
+@font-face {
+    font-family: "Castoro Regular";
+    src: url("../Castoro/Castoro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../Inter/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../Inter/static/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("../Nunito/NunitoSans-Regular.ttf");
+}
+
+@mobile-start: -15rem;
+@mobile-shown: 0rem;
+
+// SLIDE OUT
+@-webkit-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-moz-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-ms-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@-o-keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+@keyframes slide-out {
+    from { left: @mobile-start; } to { left: @mobile-shown; }
+}
+// SLIDE IN
+@-webkit-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-moz-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-ms-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@-o-keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+@keyframes slide-in {
+    from { left: @mobile-shown; } to { left: @mobile-start; }
+}
+
+.castoro-regular {
+    font-family: "Castoro Regular";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.castoro-medium {
+    font-family: "Castoro Regular";
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.castoro-large {
+    font-family: "Castoro Regular";
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.inter-regular {
+    font-family: "Inter Regular";
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.inter-medium {
+    font-family: "Inter Regular";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.inter-small {
+    font-family: "Inter Regular";
+    font-size: 0.825rem;
+    font-weight: 400;
+}
+
+.inter-bold {
+    font-family: "Inter Regular";
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nunito-regular {
+    font-family: "Nunito Regular";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.nunito-medium {
+    font-family: "Nunito Regular";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.nunito-small {
+    font-family: "Nunito Regular";
+    font-size: 0.825rem;
+}
+
+// General
+
+@main-black: #000;
+@main-white: #fff;
+@accent-grey: #e5e5e5;
+@pop-pink: #FF675F;
+
+* {
+    color: @main-black;
+    font-family: "Nunito Regular";
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+h4 {
+    margin: 0;
+}
+
+.container {
+    width: 72%;
+}
+
+.pop-pink {
+    color: @pop-pink;
+}
+
+.no-margin-top {
+    margin-block-start: 0px;
+}
+
+.accent-background {
+    background-color: @accent-grey;
+    height:100%;
+    min-height: 100vh;
+    width: 200vw;
+    margin-left: calc(-50vw + 25%);
+    padding-left: 16rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.full-view {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.tile {
+    font-family: "Inter Regular";
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    padding: .5rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.5rem;
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+    border-radius: .125rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.shadowed {
+    padding: .5rem;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: .125rem;
+}
+
+.section-icon.odd-icon {
+    max-width: initial;
+    width: auto;
+}
+
+#about-me {
+    h1.pop-pink {
+        margin-block-end: 5px;
+    }
+
+    h1.pop-pink + h1 {
+        margin-block-start: 0px;
+        margin-block-end: 28px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+#face-box {
+    #face {
+        display: block;
+    }
+
+    #about-face {
+        display: none;
+    }
+
+    &:hover #face {
+        display: none;
+    }
+
+    &:hover #about-face {
+        display: block;
+    }
+}
+
+.section {
+    .section-start {
+        margin-block-start: 4%;
+
+        h1 {
+            margin-top: 4rem;
+        }
+    }
+
+    .section-icon {
+        max-width: 2.125rem;
+        max-height: 2.125rem;
+    }
+}
+
+#skills {
+
+    h4 {
+        margin-block-start: 0.5rem;
+        margin-block-end: 0.825rem;
+    }
+
+    .language-icon {
+        max-width: none;
+    }
+
+    .skill-section {
+        margin-left: -.125rem;
+    }
+
+    .tile-group {
+        margin-bottom: 2rem;
+    }
+
+    .tile {
+        background: @main-white;
+    }
+
+    .shadow-box {
+        margin-bottom: 1rem;
+    }
+}
+
+#latest-projects {
+    .project {
+
+        .project-description {
+            h1 {
+                margin-block-end: 0;
+            }
+            p {
+                margin-block-start: 0;
+                margin-block-end: 6px;
+            }
+        }
+
+        .project-highlight {
+            margin-top: 3rem;
+            float: right;
+
+            h3 {
+                margin-block-start: -.125rem;
+            }
+            p {
+                margin-block-end: 14px;
+            }
+        }
+
+        .image-group {
+            .project-image {
+                width: 75%;
+            }
+
+            position: relative;
+            padding-bottom: 7rem;
+            top: 6rem;
+        }
+
+        .hero-image-container {
+            margin-top: 3rem;
+        }
+
+        .offset-image {
+            position: absolute;
+            height: auto;
+        }
+
+        .offset-left {
+            top: 3.5rem;
+            right: 3.5rem;
+        } 
+
+        .offset-right {
+            top: 6rem;
+            left: 7rem;
+        }
+    }
+
+    // #paramount {
+    //     .section-start {
+    //         h1 {
+    //             font-size: 3.5rem;
+    //         }
+    //     }
+    // }
+}
+
+#experience, #education {
+
+    h3 {
+        margin-block-end: 1.5%;
+    }
+
+    .shadowed {
+        max-width: max-content;
+        background-color: @main-white;
+    }
+}
+
+#experience {
+    .subtitle {
+        color: @pop-pink;
+    }
+
+    .shadow-box {
+        margin-bottom: 1rem;
+    }
+}
+
+// EDUCATION
+
+#education div:nth-child(4).col-4 {
+    margin-bottom: 0;
+}
+
+.school {
+    height: 5rem;
+}
+
+// CONTACT
+
+#contact {
+
+    .contact-icon {
+        max-width: 3.125rem;
+        height: 2.125rem;
+        margin-right: 1.625rem;
+    }
+
+    .contact-method {
+
+        padding-left: .25rem;
+
+        #email-icon {
+            margin-left: -.125rem;
+            margin-right: .125rem;
+        }
+
+        #linkedin-icon {
+            margin-left: -.375rem;
+            margin-right: .375rem;
+        }
+
+        img {
+            height: 100%;
+            position: relative;
+            top: 0.625rem;
+        }
+
+        .short-icon {
+            top: 0.5rem;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin-left: 1.625rem;
+
+            h3 {
+                margin-top: 0.06rem;
+                margin-bottom: 0.125rem;
+                color: @main-black;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                h3 {
+                    color: @pop-pink;
+                }
+
+                img {
+                    fill: @pop-pink;
+                }
+            }
+        }
+    }
+}
+
+// NAVIGATION
+
+#navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    padding: 2rem 1.5rem;
+    border-radius: 0.125rem;
+
+    a {
+        font-family: "Castoro Regular";
+        display: block;
+        text-decoration: none;
+        margin-block-end: -0.125rem;
+        border-radius: 0.125rem;
+        padding-right: 0.75rem;
+        padding-left: 0.5rem;
+        padding-top: 0.25rem;
+    }
+
+    .active-nav {
+        color: rgba(255,255,255,1);
+        background-color: rgba(0,0,0,1);
+    }
+    
+    #nav-burger {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 70rem) {
+    #paramount {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 60rem) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #navigation {
+        top: 0rem;
+        padding-top: 4rem;
+        left: -15rem;
+        transform: initial;
+        background-color: @main-black;
+
+        a {
+            color: @pop-pink;
+        }
+
+        &.hidden-mobile-nav {
+            animation-name: slide-in;
+            animation-duration: 0.2s;
+            left: -15rem;
+        }
+
+        &.shown-mobile-nav {
+            animation-name: slide-out;
+            animation-duration: 0.2s;
+            left: 0rem;
+        }
+
+        a {
+            color: @main-white;
+        }
+        
+        #nav-burger {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+    }
+
+
+    .castoro-large {
+        font-size: 3rem;
+    }
+
+    .full-view {
+        padding-bottom: 2rem;
+    }
+    
+    #contact {
+        padding-bottom: 0;
+    }
+}
+
+
+
+// HAMBURGER OVERRIDES
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 26px;
+}
+
+.hamburger--collapse .hamburger-inner::before {
+    top: -7px;
+}
+
+.hamburger--collapse .hamburger-inner::after {
+    top: -14px;
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+    background-color:white;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+    background-color: white;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+    background-color:white;
+}
+
+@media only screen and (max-width: 45rem) {
+    #latest-projects {
+        .project {
+            .image-group {
+                top: 1rem;
+            }
+            .hero-image-container {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .row {
+        width: 90%;
+    }
+}
